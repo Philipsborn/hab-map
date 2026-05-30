@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmful Algae Bloom Map: United States 2026 | Hydralife Solutions</title>
+<meta name="description" content="A live national tracker of every harmful algae bloom (HAB), toxic algae bloom, and red tide advisory issued across the United States lower 48 in 2026. Built and maintained by Hydralife Solutions.">
+<link rel="canonical" href="https://www.hydralife.org/hab-map-2026">
+
+<!-- Open Graph (Facebook, LinkedIn, iMessage previews) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.hydralife.org/hab-map-2026">
+<meta property="og:title" content="Harmful Algae Bloom Map: United States 2026">
+<meta property="og:description" content="A live national tracker of every harmful algae bloom, toxic algae bloom, and red tide advisory issued across the U.S. lower 48 in 2026.">
+<meta property="og:image" content="https://static.wixstatic.com/media/3842bd_e3c3ee522b344da1bcc8cf8382a80ee7~mv2.png/v1/fill/w_1200,h_630,al_c,q_90,enc_auto/Hydralife%20Logo%20White-01.png">
+<meta property="og:site_name" content="Hydralife Solutions">
+
+<!-- Twitter / X cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Harmful Algae Bloom Map: United States 2026">
+<meta name="twitter:description" content="Live national tracker of every harmful algae bloom and toxic algae bloom advisory issued across the U.S. in 2026.">
+<meta name="twitter:image" content="https://static.wixstatic.com/media/3842bd_e3c3ee522b344da1bcc8cf8382a80ee7~mv2.png/v1/fill/w_1200,h_630,al_c,q_90,enc_auto/Hydralife%20Logo%20White-01.png">
+
+<!-- JSON-LD structured data — for Google, Bing, and AI assistants (ChatGPT, Claude, Perplexity, Google AI Overviews) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.hydralife.org/#organization",
+      "name": "Hydralife Solutions",
+      "url": "https://www.hydralife.org",
+      "logo": "https://static.wixstatic.com/media/3842bd_e3c3ee522b344da1bcc8cf8382a80ee7~mv2.png",
+      "sameAs": [
+        "https://www.youtube.com/@HydralifeSolutions"
+      ],
+      "description": "Hydralife Solutions develops natural, chemical-free approaches to harmful algae bloom management that compete with harmful algae for the nutrients they feed on, eliminating blooms without algaecides.",
+      "areaServed": "United States",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.hydralife.org/hab-map-2026#webpage",
+      "url": "https://www.hydralife.org/hab-map-2026",
+      "name": "Harmful Algae Bloom Map: United States 2026",
+      "description": "A live national tracker of every harmful algae bloom, toxic algae bloom, and red tide advisory issued across the United States lower 48 in 2026.",
+      "isPartOf": { "@id": "https://www.hydralife.org/#website" },
+      "about": { "@id": "https://en.wikipedia.org/wiki/Harmful_algal_bloom" },
+      "publisher": { "@id": "https://www.hydralife.org/#organization" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://www.hydralife.org/hab-map-2026#dataset",
+      "name": "United States Harmful Algae Bloom Events, 2026",
+      "description": "A continuously updated dataset of harmful algae bloom (HAB), toxic algae bloom, and red tide advisories, warnings, dangers, and closures issued by U.S. state environmental agencies, federal bodies, county health departments, and credible local news sources across the lower 48 states in calendar year 2026. Each record includes water body, location, date, severity, toxin/algae type, source link, and verbatim source quote.",
+      "url": "https://www.hydralife.org/hab-map-2026",
+      "creator": { "@id": "https://www.hydralife.org/#organization" },
+      "publisher": { "@id": "https://www.hydralife.org/#organization" },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "keywords": [
+        "harmful algae bloom", "HAB", "toxic algae bloom", "cyanobacteria",
+        "blue-green algae", "microcystin", "red tide", "Karenia brevis",
+        "domoic acid", "anatoxin", "saxitoxin", "BMAA", "cylindrospermopsin",
+        "United States", "2026", "advisory", "warning", "closure"
+      ],
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "United States (lower 48 states)",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "24.5 -125.0 49.5 -66.0"
+        }
+      },
+      "temporalCoverage": "2026-01-01/2026-12-31",
+      "variableMeasured": [
+        "Water body name", "State", "County", "Bloom date", "Severity",
+        "Algae or toxin type", "Source agency", "Source URL", "Source excerpt",
+        "Status (active or lifted)"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.hydralife.org/hab-map-2026#article",
+      "headline": "Why this Toxic Algae map exists",
+      "description": "An explainer of what harmful algae blooms are, the toxins they release, how toxin severity develops over time, and how HAB toxins aerosolize to affect surrounding communities.",
+      "author": { "@id": "https://www.hydralife.org/#organization" },
+      "publisher": { "@id": "https://www.hydralife.org/#organization" },
+      "mainEntityOfPage": { "@id": "https://www.hydralife.org/hab-map-2026#webpage" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.hydralife.org/hab-map-2026#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does HAB exposure feel like in humans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Symptoms depend on the toxin and the route of exposure. Skin contact can cause rashes, hives, blisters, and eye irritation. Swallowing contaminated water can cause stomach pain, nausea, vomiting, diarrhea, headache, and fever. Breathing aerosolized toxins can cause coughing, wheezing, chest tightness, shortness of breath, and asthma flare-ups, especially for people with existing lung conditions. People with liver or kidney disease are at higher risk for serious effects from microcystins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I think I was exposed to a harmful algae bloom. What do I do right now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Leave the water and the immediate area. Move upwind if you can smell or feel an aerosol. Rinse off thoroughly with clean fresh water and soap. Do not eat fish caught from a bloom-affected water body. Do not drink the water. Watch for symptoms over the next 24 hours. If symptoms appear, call your physician or, in the United States, Poison Control at 1-800-222-1222. For severe symptoms call 911."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My dog drank from a lake or swam in suspected algae. What do I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HABs are especially dangerous to dogs. Anatoxin-a can kill a dog within minutes; microcystin can cause acute liver failure within hours. Rinse your dog thoroughly with clean fresh water (wearing gloves), do not let them lick their fur, and call your veterinarian or an emergency vet immediately. Do not wait for symptoms. The ASPCA Animal Poison Control Center is reachable 24/7 at 1-888-426-4435."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What about cattle, horses, or other livestock that drink from a pond?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you suspect a bloom, fence off the water immediately and provide an alternate clean source. Move animals out of the affected pasture. Call your veterinarian and your state agricultural extension office to test water and tissue. Symptoms include weakness, staggering, muscle tremors, photosensitization, bloody diarrhea, and sudden death. Document everything for agricultural insurance and state agencies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a harmful algae bloom actually look like?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A HAB can look like spilled paint, pea soup, green or blue-green scum, a thick mat on the surface, or streaks and clumps in the water. Colors range from bright green to blue-green, brown, red, or purplish. The water may smell musty, earthy, or like rotting plants. Not all green water is harmful and not all harmful blooms look obvious. When in doubt, stay out and report what you saw."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to eat fish caught from a bloom-affected lake?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "During a bloom or active advisory, do not eat fish from the affected water body. HAB toxins can accumulate in fish tissue, especially in the liver and other organs, and cooking does not destroy them. After an advisory is lifted, follow your state agency's specific guidance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I report a suspected harmful algae bloom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most U.S. states have an online reporting form through the state environmental agency or health department. The EPA also runs bloomWatch, a citizen reporting app. When you report, include location, date and time, photos, water appearance, any dead fish or wildlife, and contact info for follow-up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can my drinking water be affected by a HAB?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Public drinking-water utilities that draw from a HAB-affected lake or reservoir can have toxins, especially microcystin, cross the treatment plant if filtration is not designed for cyanotoxins. Boiling does not destroy cyanotoxins and can concentrate them. Follow your utility's notifications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Hydralife different from algaecides for treating algae blooms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Conventional algaecides kill algae cells, which releases the intracellular toxins all at once into the water, causing toxin spikes that can be more dangerous than the original bloom. Hydralife Solutions introduces natural, chemical-free competitors that out-consume the nutrients the harmful algae feed on, starving the bloom rather than killing it chemically. The result is cleaner water with no toxin spike, no harm to fish or beneficial organisms, and longer-lasting improvement."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, sans-serif;
+    color: #1a3a52;
+    background: #f7fafc;
+  }
+  .header {
+    background: linear-gradient(135deg, #0d4a6b 0%, #1a7a8f 100%);
+    color: white;
+    padding: 28px 24px 22px;
+  }
+  .header-inner {
+    display: flex; align-items: center; justify-content: center;
+    gap: 32px; max-width: 1100px; margin: 0 auto;
+  }
+  .header-logo { height: 86px; width: auto; flex-shrink: 0; }
+  .header-text { flex: 0 1 auto; text-align: center; }
+  .header h1 { margin: 0 0 6px; font-size: 28px; font-weight: 700; letter-spacing: -0.3px; }
+  .header .subtitle { margin: 0; font-size: 15px; opacity: 0.92; }
+  .counter {
+    display: inline-block; margin-top: 10px; padding: 6px 16px;
+    background: rgba(255,255,255,0.18); border-radius: 20px;
+    font-size: 14px; font-weight: 500;
+  }
+  @media (max-width: 720px) {
+    .header { padding: 18px 14px; }
+    .header-inner { gap: 12px; }
+    .header-logo { height: 48px; }
+    .header h1 { font-size: 20px; }
+    .header .subtitle { font-size: 13px; }
+  }
+  .map-container { position: relative; padding: 16px; max-width: 1200px; margin: 0 auto; }
+  #map { height: 580px; width: 100%; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+  .legend {
+    background: white; padding: 12px 14px; border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); font-size: 13px; line-height: 1.7;
+    border: 1px solid #e2e8f0;
+  }
+  .legend h4 { margin: 0 0 8px; font-size: 13px; font-weight: 600; color: #1a3a52; }
+  .legend-row { display: flex; align-items: center; gap: 8px; margin: 2px 0; }
+  .legend-dot {
+    display: inline-block; width: 14px; height: 14px; border-radius: 50%;
+    border: 2px solid rgba(0,0,0,0.4); flex-shrink: 0;
+  }
+  .legend-sev { display: inline-block; border-radius: 50%; background: #888;
+    border: 2px solid rgba(0,0,0,0.4); flex-shrink: 0; }
+  .slider-panel {
+    background: white; margin: 12px 16px 0; padding: 16px 20px;
+    border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    max-width: 1168px; margin-left: auto; margin-right: auto;
+  }
+  .slider-label {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 10px; font-size: 14px; font-weight: 500;
+  }
+  .current-month {
+    font-size: 18px; font-weight: 700; color: #0d4a6b;
+  }
+  .controls { display: flex; gap: 10px; align-items: center; }
+  .play-btn {
+    padding: 6px 14px; border: none; border-radius: 4px; cursor: pointer;
+    background: #0d4a6b; color: white; font-size: 13px; font-weight: 500;
+  }
+  .play-btn:hover { background: #1a7a8f; }
+  input[type="range"] { width: 100%; height: 6px; -webkit-appearance: none;
+    background: #cbd5e0; border-radius: 3px; outline: none; }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%;
+    background: #0d4a6b; cursor: pointer; border: 3px solid white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  .month-marks { display: flex; justify-content: space-between; margin-top: 6px;
+    font-size: 11px; color: #718096; }
+  .education {
+    max-width: 1168px; margin: 24px auto; padding: 0 16px;
+  }
+  .education-card {
+    background: white; padding: 28px 32px; border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06); line-height: 1.7;
+  }
+  .education-card h2 { margin: 0 0 16px; color: #0d4a6b; font-size: 22px; }
+  .education-card h3 { margin: 22px 0 10px; color: #0d4a6b; font-size: 17px; }
+  .education-card p { margin: 0 0 14px; color: #2d3748; font-size: 15px; }
+  .toxin-list { margin: 0 0 14px; padding-left: 22px; color: #2d3748; font-size: 15px; }
+  .toxin-list li { margin-bottom: 10px; line-height: 1.55; }
+  .callout {
+    background: #fef5e7; border-left: 4px solid #d97706;
+    padding: 14px 18px; border-radius: 4px; margin: 16px 0;
+    color: #7c2d12; font-size: 15px; line-height: 1.6;
+  }
+  .refs { font-size: 12px; color: #718096; margin-top: 14px; line-height: 1.6; }
+  .refs a { color: #4a5568; text-decoration: underline; }
+  .cta { margin-top: 22px; padding-top: 20px; border-top: 1px solid #e2e8f0;
+    font-size: 15px; color: #4a5568; }
+  .cta a { color: #0d4a6b; font-weight: 600; text-decoration: none; }
+  .cta a:hover { text-decoration: underline; }
+  .leaflet-popup-content { margin: 12px 14px; max-width: 280px; }
+  .popup-title { font-weight: 700; font-size: 14px; color: #0d4a6b; margin-bottom: 4px; }
+  .popup-meta { font-size: 12px; color: #718096; margin-bottom: 8px; }
+  .popup-sev { display: inline-block; padding: 2px 8px; border-radius: 10px;
+    font-size: 11px; font-weight: 600; text-transform: uppercase; color: white; }
+  .popup-quote { font-size: 12px; font-style: italic; color: #4a5568;
+    margin: 8px 0; border-left: 2px solid #cbd5e0; padding-left: 8px; }
+  .popup-link { font-size: 12px; }
+  .popup-link a { color: #0d4a6b; }
+  .impact { background: #fef5e7; padding: 4px 8px; border-radius: 4px;
+    font-size: 12px; color: #c05621; font-weight: 600; margin: 6px 0; display: inline-block; }
+  .popup-status {
+    display: inline-block; padding: 2px 8px; border-radius: 10px;
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    margin-left: 4px;
+  }
+  .popup-status.active { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+  .popup-status.lifted { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+  .filter-panel {
+    background: white; max-width: 1168px; margin: 12px auto 0;
+    padding: 14px 18px; border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  }
+  .filter-panel label { font-size: 13px; font-weight: 600; color: #4a5568; }
+  .filter-panel input[type="text"], .filter-panel select {
+    padding: 7px 10px; border: 1px solid #cbd5e0; border-radius: 4px;
+    font-size: 13px; background: white; color: #1a3a52;
+  }
+  .filter-panel input[type="text"] { width: 220px; }
+  .filter-panel input[type="text"]:focus, .filter-panel select:focus {
+    outline: none; border-color: #1a7a8f; box-shadow: 0 0 0 2px rgba(26,122,143,0.15);
+  }
+  .filter-panel .filter-reset {
+    margin-left: auto; padding: 6px 12px; border: 1px solid #cbd5e0;
+    background: white; color: #4a5568; border-radius: 4px; cursor: pointer;
+    font-size: 12px;
+  }
+  .filter-panel .filter-reset:hover { background: #f7fafc; }
+  .stats-panel {
+    background: white; max-width: 1168px; margin: 12px auto 0;
+    padding: 18px 22px; border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .stats-panel h3 { margin: 0 0 12px; color: #0d4a6b; font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+  }
+  .stat-card {
+    background: #f7fafc; padding: 10px 12px; border-radius: 6px;
+    border-left: 3px solid #1a7a8f;
+  }
+  .stat-card .label { font-size: 11px; text-transform: uppercase; color: #718096; font-weight: 600; letter-spacing: 0.4px; }
+  .stat-card .value { font-size: 22px; font-weight: 700; color: #0d4a6b; line-height: 1.2; margin-top: 2px; }
+  .stat-card .sub { font-size: 11px; color: #718096; }
+  .state-rank-list {
+    margin-top: 14px; display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 6px;
+  }
+  .state-rank {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 5px 10px; background: #f7fafc; border-radius: 4px; font-size: 13px;
+  }
+  .state-rank .st { font-weight: 700; color: #0d4a6b; }
+  .state-rank .ct { color: #718096; font-weight: 600; }
+  .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large {
+    background-clip: padding-box; border-radius: 50%;
+    background-color: rgba(13,74,107,0.25);
+  }
+  .marker-cluster-small div, .marker-cluster-medium div, .marker-cluster-large div {
+    background-color: rgba(13,74,107,0.85); color: white; font-weight: 700;
+    border-radius: 50%;
+  }
+  .faq-section { max-width: 1168px; margin: 24px auto; padding: 0 16px; }
+  .faq-card {
+    background: white; padding: 28px 32px; border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .faq-card h2 { margin: 0 0 6px; color: #0d4a6b; font-size: 22px; }
+  .faq-card .lead { margin: 0 0 18px; color: #718096; font-size: 14px; }
+  .faq-item { border-top: 1px solid #e2e8f0; padding: 16px 0; }
+  .faq-item:first-of-type { border-top: none; padding-top: 4px; }
+  .faq-item h3 { margin: 0 0 8px; color: #1a3a52; font-size: 16px; font-weight: 600; }
+  .faq-item p { margin: 0 0 8px; color: #2d3748; font-size: 14px; line-height: 1.65; }
+  .faq-item strong.tag {
+    display: inline-block; padding: 2px 8px; border-radius: 10px;
+    background: #e0f2fe; color: #075985; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.4px; margin-right: 6px;
+    font-weight: 700;
+  }
+  .faq-item strong.tag.pets { background: #fef3c7; color: #92400e; }
+  .faq-item strong.tag.livestock { background: #f3e8ff; color: #6b21a8; }
+  .faq-item strong.tag.report { background: #dcfce7; color: #166534; }
+  footer { text-align: center; padding: 24px; color: #718096; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <img class="header-logo" src="https://static.wixstatic.com/media/3842bd_e3c3ee522b344da1bcc8cf8382a80ee7~mv2.png/v1/crop/x_0,y_25,w_553,h_592/fill/w_240,h_288,al_c,q_90,enc_auto/Hydralife%20Logo%20White-01.png" alt="Hydralife Solutions">
+    <div class="header-text">
+      <h1>Harmful Algae Bloom Map: United States 2026</h1>
+      <p class="subtitle">Live tracking of HAB events, warnings, and cautions issued across the lower 48</p>
+      <div class="counter" id="counter">Loading…</div>
+    </div>
+    <img class="header-logo" src="https://static.wixstatic.com/media/3842bd_e3c3ee522b344da1bcc8cf8382a80ee7~mv2.png/v1/crop/x_0,y_25,w_553,h_592/fill/w_240,h_288,al_c,q_90,enc_auto/Hydralife%20Logo%20White-01.png" alt="Hydralife Solutions">
+  </div>
+</div>
+
+<div class="slider-panel">
+  <div class="slider-label">
+    <span>Watch the year unfold: slide to see HABs through <span class="current-month" id="month-label">May</span> 2026</span>
+    <div class="controls">
+      <button class="play-btn" id="play-btn">▶ Play</button>
+    </div>
+  </div>
+  <input type="range" id="slider" min="1" max="12" value="5" step="1">
+  <div class="month-marks">
+    <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span>
+    <span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span>
+    <span>Nov</span><span>Dec</span>
+  </div>
+</div>
+
+<div class="filter-panel" id="filter-panel">
+  <label for="search-input">Find your lake:</label>
+  <input type="text" id="search-input" placeholder="e.g. Lake Mead, Cayuga, Okeechobee…" autocomplete="off">
+  <label for="state-select">State:</label>
+  <select id="state-select">
+    <option value="">All states</option>
+  </select>
+  <label for="status-select">Status:</label>
+  <select id="status-select">
+    <option value="">All</option>
+    <option value="active">Active only</option>
+    <option value="lifted">Lifted only</option>
+  </select>
+  <button class="filter-reset" id="filter-reset" type="button">Reset filters</button>
+</div>
+
+<div class="map-container">
+  <div id="map"></div>
+</div>
+
+<div class="stats-panel" id="stats-panel">
+  <h3>2026 HAB Snapshot</h3>
+  <div class="stats-grid" id="stats-grid"></div>
+  <h3 style="margin-top:18px">States Ranked by Event Count</h3>
+  <div class="state-rank-list" id="state-rank-list"></div>
+</div>
+
+<div class="education">
+  <div class="education-card">
+    <h2>Why this Toxic Algae map exists</h2>
+    <p>Every dot on this map represents a harmful algae bloom (HAB) event, warning, or caution issued in 2026 by a state agency, federal body, county health department, or credible news source. These are not predictions. They are publicly issued advisories.</p>
+
+    <p>Harmful Algae Blooms, also called <strong>HABs</strong> or <strong>Toxic Algae Blooms</strong>, are caused by the explosive growth of certain <strong>cyanobacteria</strong> species (also known as <strong>blue-green algae</strong>) in freshwater, and by the dinoflagellate <em>Karenia brevis</em> (<strong>red tide</strong>) along the coasts. They feed on excess nutrients in the water (nitrogen and phosphorus from agriculture, lawns, septic systems, and wastewater) and can release a range of potent toxins that sicken or kill humans, pets, livestock, fish, and marine mammals.</p>
+
+    <h3>The toxins these blooms release</h3>
+    <ul class="toxin-list">
+      <li><strong>Microcystins</strong> (produced by <em>Microcystis</em>, <em>Anabaena</em>, <em>Planktothrix</em>), the most common cyanotoxin in U.S. freshwater. A liver toxin and possible human carcinogen; also damages kidneys and the gut. Causes nausea, vomiting, abdominal pain, fever, headache, and skin rashes.</li>
+      <li><strong>Cylindrospermopsin</strong> (<em>Cylindrospermopsis</em>, <em>Aphanizomenon</em>), attacks the liver and kidneys, causes serious DNA damage, and disrupts developmental processes.</li>
+      <li><strong>Anatoxin-a / anatoxin-a(s)</strong> (<em>Anabaena</em>, <em>Aphanizomenon</em>), fast-acting <em>neurotoxins</em>. Historically nicknamed "Very Fast Death Factor": animals can die within minutes of exposure. Implicated in many dog deaths at U.S. lakes.</li>
+      <li><strong>Saxitoxins</strong>, potent neurotoxins. Symptoms range from tingling and numbness to respiratory failure and death.</li>
+      <li><strong>BMAA</strong> (β-methylamino-L-alanine), produced by many cyanobacteria. Chronic, repeated exposure is linked to neurodegenerative disease, including ALS, Parkinson's, and Alzheimer's-type illness.</li>
+      <li><strong>Brevetoxins</strong> (<em>Karenia brevis</em> red tide), marine neurotoxins. Cause neurotoxic shellfish poisoning and severe respiratory irritation in coastal communities.</li>
+      <li><strong>Domoic acid</strong> (<em>Pseudo-nitzschia</em> diatoms), neurotoxin behind amnesic shellfish poisoning. Causes permanent short-term memory loss, seizures, and death. Has driven mass marine-mammal die-offs along the U.S. West Coast.</li>
+    </ul>
+
+    <h3>Severity develops over time</h3>
+    <p>Toxin levels are not constant. Many HAB toxins are stored <em>inside</em> algae cells and are released into the water only when those cells die or rupture, which happens naturally as the bloom ages, and can be accelerated by wave action, sudden weather shifts, or chemical algaecide treatment. An aging or treated bloom often releases far more toxin than the active bloom did at its peak. What looks like a mild bloom on Monday can be at its most dangerous a week later.</p>
+
+    <div class="callout"><strong>HAB toxins can travel through the air.</strong> They do not stay in the water. Bursting bubbles at the surface, wave action, breaking surf, jet skis, and boats all launch toxin-carrying aerosols into the air. Brevetoxin aerosols from Florida red tides have been measured miles inland and routinely trigger coughing, wheezing, chest tightness, eye irritation, and asthma flares in coastal residents who never enter the water. Microcystin and BMAA aerosols have also been detected near freshwater blooms. Surrounding communities (not just swimmers, boaters, and their pets) are exposed.</div>
+
+    <p>This page is updated as new advisories are issued. The earliest known U.S. HAB in 2026 was reported on the Florida Panhandle on January 1; the earliest freshwater bloom on Cayuga Lake (NY) was confirmed April 23, months ahead of the historical norm.</p>
+
+    <div class="cta">
+      <strong>Hydralife Solutions</strong> develops natural, chemical-free approaches that compete with harmful algae for the nutrients they feed on, eliminating blooms without algaecides. <a href="https://hydralife.org" target="_blank">Learn more about our approach →</a> or <a href="https://www.youtube.com/@HydralifeSolutions" target="_blank">watch how it works on YouTube →</a>
+    </div>
+
+    <p class="refs">Sources: <a href="https://www.epa.gov/habs/learn-about-harmful-algae-cyanobacteria-and-cyanotoxins" target="_blank">U.S. EPA: Learn About Harmful Algae</a> · <a href="https://www.epa.gov/habs/common-toxins-produced-cyanobacteria-dinoflagellates-and-diatoms" target="_blank">EPA: Common Toxins Produced by Cyanobacteria, Dinoflagellates, and Diatoms</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8950847/" target="_blank">NIH PMC: Adverse Health Effects of Microcystins and Other HAB Toxins</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10363441/" target="_blank">NIH PMC: HAB Aerosols and Human Health</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2851154/" target="_blank">NIH PMC: Brevetoxin Concentrations in Marine Aerosol</a>.</p>
+  </div>
+</div>
+
+<section class="faq-section" id="faq" itemscope itemtype="https://schema.org/FAQPage">
+  <div class="faq-card">
+    <h2>What to do if you, your pet, or your livestock are exposed</h2>
+    <p class="lead">If you suspect HAB exposure, the most important step is to stop contact, rinse off, and watch closely for symptoms. The information below is general guidance. Always defer to your physician, your veterinarian, your local poison control center, and your state or county health authority for medical decisions.</p>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 itemprop="name"><strong class="tag">People</strong>What does HAB exposure feel like in humans?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">Symptoms depend on the toxin and the route of exposure. <em>Skin contact</em> can cause rashes, hives, blisters, and eye irritation. <em>Swallowing contaminated water</em> can cause stomach pain, nausea, vomiting, diarrhea, headache, and fever. <em>Breathing aerosolized toxins</em> (from surf, jet skis, or waves) can cause coughing, wheezing, chest tightness, shortness of breath, and asthma flare-ups, especially for people with existing lung conditions. People with liver or kidney disease are at higher risk for serious effects from microcystins. If symptoms are severe or worsening, seek medical care immediately.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 itemprop="name"><strong class="tag">People</strong>I think I was exposed. What do I do right now?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text"><strong>1.</strong> Leave the water and the immediate area. Move upwind if you can smell or feel an aerosol. <strong>2.</strong> Rinse off thoroughly with clean fresh water and soap. Wash swimsuits and gear separately. <strong>3.</strong> Do not eat fish caught from a bloom-affected water body; do not drink the water. <strong>4.</strong> Watch for symptoms over the next 24 hours. <strong>5.</strong> If symptoms appear, call your physician or, in the United States, Poison Control at <strong>1-800-222-1222</strong>. For severe symptoms (breathing difficulty, persistent vomiting, neurological symptoms), call <strong>911</strong>.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 itemprop="name"><strong class="tag pets">Pets</strong>My dog drank from a lake or swam in suspected algae. What now?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">HABs are <strong>especially dangerous to dogs</strong>. Anatoxin-a can kill a dog within minutes; microcystin can cause acute liver failure within hours. <strong>Act immediately:</strong> rinse your dog thoroughly with clean fresh water (wear gloves so you do not contaminate yourself), do not let them lick their fur, and <strong>call your veterinarian or an emergency vet right now</strong>. Do not wait for symptoms. Symptoms to watch for: weakness, staggering, vomiting, diarrhea, drooling, seizures, difficulty breathing, blue gums, collapse. The ASPCA Animal Poison Control Center is reachable 24/7 at <strong>1-888-426-4435</strong> (a consultation fee may apply).</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 itemprop="name"><strong class="tag livestock">Livestock</strong>What about cattle, horses, or other livestock that drink from a pond?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">Livestock deaths from HAB-affected stock ponds are a recurring cause of agricultural loss across the United States. If you suspect a bloom, <strong>fence off the water immediately</strong> and provide an alternate clean source. Move animals out of the affected pasture. Call your veterinarian and your state agricultural extension office to test water and tissue. Symptoms include weakness, staggering, muscle tremors, photosensitization (skin damage on light-colored areas), bloody diarrhea, and sudden death. Document everything (timestamps, symptoms, water appearance, photos). Agricultural insurance and state agencies will ask.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 itemprop="name"><strong class="tag">People</strong>What does a HAB actually look like?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">A HAB can look like spilled paint, pea soup, green or blue-green scum, a thick mat on the surface, or streaks and clumps in the water. Colors range from bright green to blue-green, brown, red, or even purplish. The water may smell musty, earthy, or like rotting plants. <strong>Important:</strong> not all green water is harmful, and not all harmful blooms look obvious. When in doubt, stay out, and report what you saw.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 itemprop="name"><strong class="tag">People</strong>Is it safe to eat fish I caught from a bloom-affected lake?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">During a bloom or active advisory, do not eat fish from the affected water body. HAB toxins can accumulate in fish tissue, especially in the liver and other organs, and cooking does not destroy them. After an advisory is lifted, follow your state agency's specific guidance. Many recommend cleaning fish carefully, discarding skin, fat, and organs, and eating only the fillet. Shellfish from marine HAB-affected waters can be especially dangerous and are usually banned by health departments.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 itemprop="name"><strong class="tag report">Report</strong>How do I report a suspected bloom?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">Most U.S. states have an online reporting form for suspected HABs, typically through the state environmental agency or health department. The EPA also runs <strong>bloomWatch</strong>, a citizen reporting app. When you report, include: location (GPS or address), date and time, photos, water appearance, any dead fish or wildlife, and contact info for follow-up. Local news outlets and your county health department are also useful escalation channels, especially if you see official advisories missing on a clearly affected water body.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 itemprop="name"><strong class="tag">People</strong>Can my drinking water be affected?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">Yes. Public drinking-water utilities that draw from a HAB-affected lake or reservoir can have toxins (especially microcystin) cross the treatment plant if filtration is not designed for cyanotoxins. Utilities are required to monitor and notify the public if a do-not-drink or do-not-boil order is issued (boiling does <strong>not</strong> destroy cyanotoxins; it can concentrate them). Private well users near a bloom should also be cautious, especially if shallow groundwater connects to the surface water body. Follow your utility's notifications.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 itemprop="name"><strong class="tag">People</strong>How is Hydralife different from algaecides?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">Conventional algaecides (copper sulfate, peroxide-based products, etc.) kill algae cells, which sounds good but actually <strong>releases the intracellular toxins all at once into the water</strong>, causing toxin spikes that can be more dangerous than the original bloom. Hydralife Solutions takes a different approach: we introduce natural, chemical-free competitors that out-consume the nutrients (nitrogen and phosphorus) the harmful algae feed on, starving the bloom rather than killing it chemically. The result is cleaner water with no toxin spike, no harm to fish or beneficial organisms, and longer-lasting improvement. <a href="https://hydralife.org" target="_blank">Learn more →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Data sources: State health &amp; environment agencies, EPA, NOAA, CDC, county health departments, and credible news outlets. Each dot links to its primary source. Built and maintained by Hydralife Solutions, Denver, CO. Educational content; not medical advice.
+</footer>
+
+<script>
+const EVENTS = [{"id":"20260101-FL-001","date":"2026-01-01","state":"FL","county":"Bay","name":"Bay County coastal waters (Panhandle)","type":"coastal","sev":"warning","algae":"Karenia brevis","lat":30.166,"lng":-85.66,"url":"https://www.tampafp.com/toxic-bloom-returns-to-florida-red-tide-sparks-fish-kills-and-health-warnings-in-bay-county/","source_type":"local_news","quote":"Florida Fish and Wildlife Conservation Commission identified the red tide organism Karenia brevis in eight different samples; one sample in Bay County showed 'bloom concentrations' (>100,000 cells/L). Fish kills reported in Bay and Gulf counties; respiratory irritation reports."},{"id":"20260102-FL-002","date":"2026-01-02","state":"FL","county":"Bay","name":"St. Andrews Bay / Bay County nearshore","type":"coastal","sev":"warning","algae":"Karenia brevis","lat":30.15,"lng":-85.683,"url":"https://www.wjhg.com/2026/01/02/potentially-severe-red-tide-with-respiratory-risk-bay-county/","source_type":"local_news","quote":"NCCOS predicted a potentially severe red tide in Bay County with warning issued Jan 2, 2026. Significant risk of respiratory irritation; people with chronic lung problems could experience severe reactions."},{"id":"20260106-FL-003","date":"2026-01-06","state":"FL","county":"Escambia","name":"Admiral Mason Park Pond, Pensacola","type":"pond","sev":"warning","algae":"cyanobacteria","lat":30.413,"lng":-87.214,"url":"https://escambia.floridahealth.gov/2026/01/09/doh-escambia-issues-blue-green-algae-health-alert-for-admiral-mason-park-pond-3/","source_type":"county_health","quote":"DOH-Escambia issued a health alert for harmful blue-green algae toxins in Admiral Mason Park Pond, water sample taken Jan 6, 2026. Advised: do not drink/swim/wade; keep pets and livestock away."},{"id":"20260106-FL-004","date":"2026-01-06","state":"FL","county":"Polk","name":"Lake Echo (NW)","type":"lake","sev":"warning","status":"lifted","algae":"cyanobacteria","lat":27.978,"lng":-81.733,"url":"https://polk.floridahealth.gov/2026/01/09/doh-polk-issues-blue-green-algae-health-alert-for-lake-echo-nw-update/","source_type":"county_health","quote":"Blue-Green Algae Health Alert issued for Polk County Lake Echo-NW on Jan 6, 2026 (lifted Jan 16). DOH-Polk alert for harmful blue-green algae toxins."},{"id":"20260106-FL-005","date":"2026-01-06","state":"FL","county":"Palm Beach","name":"Lake Okeechobee (CLV10A, RITTAE2)","type":"lake","sev":"advisory","algae":"cyanobacteria","lat":26.943,"lng":-80.829,"url":"https://palmbeach.floridahealth.gov/2026/01/07/doh-palm-beach-cautions-about-blue-green-algae-at-lake-okeechobee-23/","source_type":"county_health","quote":"DOH-Palm Beach cautions presence of blue-green algae in Lake Okeechobee at two locations (CLV10A, RITTAE2), sites visited Jan 6, 2026. Water sample testing underway."},{"id":"20260107-FL-006","date":"2026-01-07","state":"FL","county":"Hillsborough","name":"Hobbs Lake (South) & Lake Thonotosassa","type":"lake","sev":"warning","algae":"cyanobacteria","lat":28.061,"lng":-82.297,"url":"https://hillsborough.floridahealth.gov/2026/01/07/doh-hillsborough-issues-blue-green-algae-health-alert-for-hobbs-lake-south-and-lake-thonotosassa/","source_type":"county_health","quote":"DOH-Hillsborough health alert for harmful blue-green algae toxins in Hobbs Lake-South (private) and Lake Thonotosassa from samples taken Dec 29, 2025."},{"id":"20260108-FL-007","date":"2026-01-08","state":"FL","county":"Orange","name":"Lake Killarney (Near Center)","type":"lake","sev":"warning","status":"lifted","algae":"cyanobacteria","lat":28.591,"lng":-81.405,"url":"https://orange.floridahealth.gov/2026/01/16/doh-orange-issues-blue-green-algae-health-alert-for-lake-killarney-near-center-2/","source_type":"county_health","quote":"DOH-Orange cautioned presence of blue-green algae in Lake Killarney (Near Center) on Jan 8, 2026; health alert issued Jan 16, 2026. Alert later lifted as follow-up samples did not detect toxins."},{"id":"20260120-FL-008","date":"2026-01-20","state":"FL","county":"Lee","name":"Caloosahatchee River - Sebastian Canal","type":"canal","sev":"warning","algae":"cyanobacteria","lat":26.769,"lng":-81.466,"url":"https://lee.floridahealth.gov/2026/01/29/doh-lee-issues-blue-green-algae-health-alert-for-caloosahatchee-river-sebastian-canal/","source_type":"county_health","quote":"DOH-Lee health alert for harmful blue-green algae toxins in Caloosahatchee River-Sebastian Canal from sample taken Jan 20, 2026."},{"id":"20260128-FL-009","date":"2026-01-28","state":"FL","county":"Glades","name":"Caloosahatchee Drive Canal","type":"canal","sev":"warning","algae":"cyanobacteria","lat":26.797,"lng":-81.099,"url":"https://glades.floridahealth.gov/2026/02/10/blue-green-algae-health-alert/","source_type":"county_health","quote":"DOH-Glades health alert for harmful blue-green algae toxins in Caloosahatchee Drive Canal on Feb 5, 2026 (sample taken Jan 28, 2026)."},{"id":"20260202-FL-010","date":"2026-02-02","state":"FL","county":"Lee","name":"Caloosahatchee River - Sebastian Canal (re-issued)","type":"canal","sev":"warning","algae":"cyanobacteria","lat":26.769,"lng":-81.466,"url":"https://lee.floridahealth.gov/2026/02/05/doh-lee-issues-blue-green-algae-health-alert-for-caloosahatchee-river-sebastian-canal-2/","source_type":"county_health","quote":"Health alert re-issued for harmful blue-green algae toxins in Sebastian Canal off Caloosahatchee River from sample taken Feb 2, 2026. Re-emergence event."},{"id":"20260205-FL-011","date":"2026-02-05","state":"FL","county":"Hillsborough","name":"Lake Thonotosassa","type":"lake","sev":"warning","algae":"cyanobacteria","lat":28.061,"lng":-82.297,"url":"https://hillsborough.floridahealth.gov/2026/02/05/doh-hillsborough-issues-blue-green-algae-health-alert-for-lake-thonotosassa-7/","source_type":"county_health","quote":"DOH-Hillsborough health alert for harmful blue-green algae toxins in Lake Thonotosassa. Recurring water body."},{"id":"20260209-FL-012","date":"2026-02-09","state":"FL","county":"Palm Beach","name":"Lake Okeechobee - Pahokee Marina","type":"lake","sev":"advisory","algae":"cyanobacteria","lat":26.821,"lng":-80.665,"url":"https://palmbeach.floridahealth.gov/2026/02/10/doh-palm-beach-cautions-about-blue-green-algae-at-lake-okeechobee-37/","source_type":"county_health","quote":"DOH-Palm Beach cautions presence of blue-green algae in Lake Okeechobee-Pahokee Marina on Feb 9, 2026. Water sample testing underway."},{"id":"20260211-FL-013","date":"2026-02-11","state":"FL","county":"Collier","name":"Lake Avalon","type":"lake","sev":"advisory","algae":"cyanobacteria","lat":26.232,"lng":-81.667,"url":"https://collier.floridahealth.gov/2026/02/11/doh-collier-cautions-regarding-blue-green-algae-at-lake-avalon/","source_type":"county_health","quote":"DOH-Collier cautions presence of blue-green algae in Lake Avalon, alert posted Feb 11, 2026."},{"id":"20260301-FL-014","date":"2026-03-01","state":"FL","county":"Bay","name":"FL Panhandle beaches (Bay/Gulf/Walton/Okaloosa)","type":"coastal","sev":"warning","algae":"Karenia brevis","lat":30.179,"lng":-85.806,"url":"https://www.wafb.com/2026/05/07/25-dolphins-dead-along-florida-panhandle-red-tide-toxin-suspected/","source_type":"local_news","quote":"During March 2026, 25 bottlenose dolphins stranded in the Panhandle: 9 Bay, 14 Gulf, 1 Walton, 1 Okaloosa. Necropsies of 6 of 7 showed Red Tide brevetoxin exposure.","impact":"25 dolphin deaths"},{"id":"20260311-FL-015","date":"2026-03-11","state":"FL","county":"Orange","name":"Lake Conway (St. Regis Place)","type":"lake","sev":"advisory","algae":"cyanobacteria","lat":28.479,"lng":-81.355,"url":"https://orange.floridahealth.gov/2026/03/12/doh-orange-cautions-about-blue-green-algae-at-lake-conway-st-regis-place/","source_type":"county_health","quote":"DOH-Orange cautions presence of blue-green algae in Lake Conway (St. Regis Place) on Mar 11, 2026."},{"id":"20260312-FL-016","date":"2026-03-12","state":"FL","county":"Hillsborough","name":"Lake Thonotosassa (March)","type":"lake","sev":"warning","algae":"cyanobacteria","lat":28.061,"lng":-82.297,"url":"https://hillsborough.floridahealth.gov/2026/03/16/doh-hillsborough-issues-blue-green-algae-health-alert-for-lake-thonotosassa-9/","source_type":"county_health","quote":"DOH-Hillsborough health alert for harmful blue-green algae toxins in Lake Thonotosassa from samples Mar 12, 2026."},{"id":"20260316-FL-017","date":"2026-03-16","state":"FL","county":"Orange","name":"Lake Apopka - Newton Park dock","type":"lake","sev":"advisory","algae":"cyanobacteria","lat":28.638,"lng":-81.629,"url":"https://orange.floridahealth.gov/2026/03/24/doh-orange-cautions-about-blue-green-algae-at-lake-apopka-newton-park-dock-2/","source_type":"county_health","quote":"Blue-green algae detected at Lake Apopka's Newton Park dock on Mar 16, 2026."},{"id":"20260408-FL-018","date":"2026-04-08","state":"FL","county":"Orange","name":"Lake Como (NW Shore)","type":"lake","sev":"advisory","algae":"cyanobacteria","lat":28.563,"lng":-81.35,"url":"https://orange.floridahealth.gov/2026/04/08/doh-orange-cautions-about-blue-green-algae-at-lake-como-nw-shore/","source_type":"county_health","quote":"DOH-Orange cautions presence of harmful blue-green algae toxins in Lake Como (NW Shore)."},{"id":"20260413-FL-019","date":"2026-04-13","state":"FL","county":"Polk","name":"Lake Hamilton East - Sample Park","type":"lake","sev":"advisory","algae":"cyanobacteria","lat":28.04,"lng":-81.628,"url":"https://polk.floridahealth.gov/2026/04/14/doh-polk-cautions-about-blue-green-algae-at-lake-hamilton-east-sample-park/","source_type":"county_health","quote":"DOH-Polk cautions presence of blue-green algae at Lake Hamilton East-Sample Park on Apr 13, 2026."},{"id":"20260416-FL-020","date":"2026-04-16","state":"FL","county":"Marion","name":"Orange Lake - Eagles Nest Dock (April)","type":"lake","sev":"warning","algae":"cyanobacteria","lat":29.45,"lng":-82.196,"url":"https://marion.floridahealth.gov/2026/04/17/doh-marion-issues-blue-green-algae-health-alert-for-orange-lake-eagles-nest-dock/","source_type":"county_health","quote":"DOH-Marion Blue-Green Algae Health Alert for Orange Lake-Eagles Nest Dock after sampling confirmed presence of harmful toxins."},{"id":"20260417-FL-021","date":"2026-04-17","state":"FL","county":"Lake","name":"Lake Carlton (Near Center) - Lake County","type":"lake","sev":"warning","algae":"cyanobacteria","lat":28.694,"lng":-81.673,"url":"https://lake.floridahealth.gov/2026/04/17/doh-lake-issues-blue-green-algae-health-alert-for-lake-carlton-near-center/","source_type":"county_health","quote":"DOH-Lake Blue-Green Algae Health Alert for Lake Carlton (Near Center)."},{"id":"20260422-FL-022","date":"2026-04-22","state":"FL","county":"Orange","name":"NW Recreation Complex Pond, Apopka","type":"pond","sev":"warning","algae":"cyanobacteria","lat":28.676,"lng":-81.515,"url":"https://orange.floridahealth.gov/2026/04/27/doh-orange-issues-blue-green-algae-health-alert-for-nw-recreation-complex-pond-e-shore/","source_type":"county_health","quote":"DOH-Orange health alert for harmful blue-green algae toxins in NW Recreation Complex Pond (E Shore), sample taken Apr 22, 2026."},{"id":"20260505-FL-023","date":"2026-05-05","state":"FL","county":"Orange","name":"Lake Carlton (Orange Co.)","type":"lake","sev":"advisory","algae":"cyanobacteria","lat":28.605,"lng":-81.412,"url":"https://orange.floridahealth.gov/2026/05/12/doh-orange-cautions-about-blue-green-algae-at-lake-carlton-near-center/","source_type":"county_health","quote":"DOH-Orange cautions presence of blue-green algae in Lake Carlton (Near Center) on May 5, 2026. Sensitive individuals at risk even at low concentrations."},{"id":"20260506-FL-024","date":"2026-05-06","state":"FL","county":"Hernando","name":"Withlacoochee River - near Nobleton","type":"river","sev":"advisory","algae":"cyanobacteria","lat":28.667,"lng":-82.26,"url":"https://www.hernandocounty.us/news/posts/doh-hernando-cautions-about-blue-green-algae-at-withlacoochee-river-near-nobleton/","source_type":"county_health","quote":"DOH-Hernando cautions presence of blue-green algae in Withlacoochee River near Nobleton on May 6, 2026."},{"id":"20260506-FL-025","date":"2026-05-06","state":"FL","county":"Marion","name":"Orange Lake - Eagles Nest Dock (May)","type":"lake","sev":"warning","algae":"cyanobacteria","lat":29.45,"lng":-82.196,"url":"https://marion.floridahealth.gov/2026/05/11/doh-marion-issues-blue-green-algae-health-alert-for-orange-lake-eagles-nest-dock-2/","source_type":"county_health","quote":"DOH-Marion health alert for harmful blue-green algae toxins in Orange Lake-Eagles Nest Dock from sample taken May 6, 2026. Second advisory in a month."},{"id":"20260507-GA-001","date":"2026-05-07","state":"GA","county":"Bartow","name":"Lake Allatoona - Red Top Mountain Marina","type":"lake","sev":"warning","algae":"cyanobacteria","lat":34.158,"lng":-84.703,"url":"https://www.atlantanewsfirst.com/2026/05/13/blue-green-algae-bloom-seen-lake-allatoona-authority-says/","source_type":"local_news","quote":"Blue-green algae bloom in Lake Allatoona prompted a warning from Cobb County-Marietta Water Authority, reported near Red Top Mountain Park Marina on May 7. Drinking water reported unaffected."},{"id":"20260313-NV-001","date":"2026-03-13","state":"NV","county":"Clark","name":"Lake Mead (Government Wash)","type":"reservoir","sev":"warning","algae":"Microcystis","lat":36.11,"lng":-114.842,"url":"https://www.8newsnow.com/news/local-news/toxic-bloom-at-lake-mead-is-southern-nevadas-first-in-2026/","source_type":"local_news","quote":"Lake Mead officials warning visitors in Government Wash area about dangerous conditions from poisons produced by blue-green algae. Toxic HAB initially reported Mar 13. First of season in Southern NV. Microcystis can be deadly to dogs."},{"id":"20260511-NV-002","date":"2026-05-11","state":"NV","county":"Churchill","name":"Lahontan Reservoir","type":"reservoir","sev":"advisory","algae":"cyanobacteria (suspected)","lat":39.46,"lng":-119.085,"url":"https://www.kolotv.com/2026/05/11/lahontan-reservoir-placed-under-hab-watch/","source_type":"local_news","quote":"Lahontan Reservoir placed under HAB Watch Advisory after visual assessments indicated possible harmful algae bloom. Water tests being conducted by Nevada DEP."},{"id":"20260311-UT-001","date":"2026-03-11","state":"UT","county":"Kane","name":"Lake Powell (multi-state)","type":"reservoir","sev":"warning","algae":"cyanobacteria","lat":37.066,"lng":-111.241,"url":"https://www.abc4.com/news/health/advisory-issued-after-harmful-algae-blooms-found-in-lake-powell/","source_type":"local_news","quote":"NPS issued warning advisory after harmful algal blooms found in Lake Powell at concentrations at high end of safe exposure levels. Cyanotoxins can be harmful to humans and animals."},{"id":"20260510-UT-002","date":"2026-05-10","state":"UT","county":"Washington","name":"Virgin River (near LaVerkin)","type":"river","sev":"warning","algae":"cyanobacteria","lat":37.201,"lng":-113.265,"url":"https://www.abc4.com/news/health/dog-dies-harmful-algal-bloom-virin-river/","source_type":"local_news","quote":"A dog died while playing in the Virgin River over the weekend; officials warning public about dangers of HABs. Cyanobacteria hazardous to animals and sometimes people.","impact":"1 dog death"},{"id":"20260512-WA-001","date":"2026-05-12","state":"WA","county":"Thurston","name":"Lake Lawrence","type":"lake","sev":"warning","algae":"Microcystin-producing cyanobacteria","lat":46.875,"lng":-122.683,"url":"https://www.thurstoncountywa.gov/news/toxic-algae-health-advisory-effect-lake-lawrence-toxic-levels-are-above-threshold-health-concern","source_type":"county_health","quote":"Lab results from Lake Lawrence May 12, 2026 detected Microcystin at 45.9 \u00b5g/L, above state recreation guideline of 8.0 \u00b5g/L. Microcystins are a liver toxin and possible human carcinogen."},{"id":"20260219-CA-001","date":"2026-02-19","state":"CA","county":"Los Angeles","name":"S. California Pacific Coast (Malibu\u2192SD)","type":"coastal","sev":"danger","algae":"Pseudo-nitzschia (domoic acid)","lat":34.026,"lng":-118.781,"url":"https://malibutimes.com/unprecedented-domoic-acid-outbreak-harms-sea-lions-along-malibu-beaches","source_type":"local_news","quote":"Domoic acid event began Wed Feb 19 with a sea lion call. By Friday 8 affected sea lions, 2 dead. 100 calls/day across West Coast Marine Mammal Stranding Network. More than 200 animals killed in Santa Barbara County since February.","impact":"200+ marine mammal deaths"},{"id":"20260408-CA-002","date":"2026-04-08","state":"CA","county":"Contra Costa","name":"Contra Loma Reservoir","type":"reservoir","sev":"advisory","algae":"cyanobacteria","lat":37.953,"lng":-121.762,"url":"https://mywaterquality.ca.gov/cyanohab/docs/meetings/2026/apr/cchab-minutes-2026-04-08.pdf","source_type":"state_agency","quote":"California CCHAB Network meeting minutes from Apr 8, 2026 report a Caution advisory at Contra Loma in the Central Valley region."},{"id":"20260408-CA-003","date":"2026-04-08","state":"CA","county":"Madera","name":"H.V. Eastman Lake","type":"lake","sev":"advisory","algae":"cyanobacteria","lat":37.224,"lng":-119.974,"url":"https://mywaterquality.ca.gov/cyanohab/docs/meetings/2026/apr/cchab-minutes-2026-04-08.pdf","source_type":"state_agency","quote":"CCHAB Network meeting minutes from Apr 8, 2026 show Caution advisory at H.V. Eastman Lake in Central Valley region. Annual HAB events common at this site."},{"id":"20260423-NY-001","date":"2026-04-23","state":"NY","county":"Cayuga","name":"Cayuga Lake (near Harris Park)","type":"lake","sev":"warning","algae":"Microcystis","lat":42.937,"lng":-76.749,"url":"https://www.ithaca.com/news/regional_news/earliest-harmful-algal-bloom-on-record-confirmed-on-cayuga-lake/article_32c329e2-cce3-465b-ad48-e438501253e8.html","source_type":"local_news","quote":"First bloom of 2026 identified Apr 23 in village of Cayuga, northern end of the lake. Volunteer spotted bloom south of Harris Park. Analysts confirmed abundant Microcystis. EARLIEST bloom on record since 2018."},{"id":"20260208-TX-001","date":"2026-02-08","state":"TX","county":"Hood","name":"Lake Granbury","type":"reservoir","sev":"warning","algae":"Prymnesium parvum (golden alga)","lat":32.422,"lng":-97.785,"url":"https://tpwd.texas.gov/landwater/water/environconcerns/hab/ga/status.phtml","source_type":"state_agency","quote":"Fish kill occurred throughout Lake Granbury Feb 8-10, 2026; most dead fish identified as Threadfin Shad. Water samples Feb 10 showed varying P. parvum toxicity across the lake; Mallard Point sample moderately toxic to fish."},{"id":"20260205-TX-002","date":"2026-02-05","state":"TX","county":"Midland","name":"Beal Park Pond","type":"pond","sev":"advisory","algae":"Prymnesium parvum","lat":32.018,"lng":-102.108,"url":"https://tpwd.texas.gov/landwater/water/environconcerns/hab/ga/status.phtml","source_type":"state_agency","quote":"As of Feb 5, 2026, water sample from Beal Park Pond in Midland had moderate density of P. parvum cells, classified as non-toxic to fish."},{"id":"20260205-TX-003","date":"2026-02-05","state":"TX","county":"Midland","name":"C.J. Kelly Park Pond","type":"pond","sev":"advisory","algae":"Prymnesium parvum","lat":31.998,"lng":-102.119,"url":"https://tpwd.texas.gov/landwater/water/environconcerns/hab/ga/status.phtml","source_type":"state_agency","quote":"C.J. Kelly Park Pond had high density of P. parvum cells but classified non-toxic to fish. TPWD postponed trout stocking until golden algae bloom subsides."},{"id":"20260205-TX-004","date":"2026-02-05","state":"TX","county":"Mitchell","name":"Lake Colorado City","type":"reservoir","sev":"advisory","algae":"Prymnesium parvum","lat":32.33,"lng":-100.945,"url":"https://tpwd.texas.gov/landwater/water/environconcerns/hab/ga/status.phtml","source_type":"state_agency","quote":"Water samples from Lake Colorado City State Park Feb 5 and Mar 2, 2026 had low density of P. parvum cells, classified non-toxic to fish."},{"id":"20260403-KS-001","date":"2026-04-03","state":"KS","county":"Lyon","name":"King Lake","type":"lake","sev":"warning","algae":"cyanobacteria","lat":38.487,"lng":-96.176,"url":"https://www.wibw.com/2026/04/03/kdhe-issues-blue-green-algae-warning-advisory-king-lake-lyon-county/","source_type":"local_news","quote":"KDHE and KDWP issued blue-green algae warning advisory for King Lake in Lyon County. Warning status: HABs are expected or present; lake water not safe to drink for pets or livestock."},{"id":"20260403-KS-002","date":"2026-04-03","state":"KS","county":"Sedgwick","name":"Lake Afton","type":"lake","sev":"warning","algae":"cyanobacteria","lat":37.58,"lng":-97.625,"url":"https://www.kake.com/home/lake-afton-among-3-kansas-lakes-under-blue-green-algae-warnings/article_7d997b8a-22c5-4bd4-8abd-801944a8af86.html","source_type":"local_news","quote":"KDHE issued blue-green algae warning for Lake Afton on Apr 3, 2026. Warning status indicates conditions unsafe for human and pet exposure. Toxins can cause diarrhea, fever, headache, rash, sore throat, vomiting."},{"id":"20260403-KS-003","date":"2026-04-03","state":"KS","county":"Crawford","name":"Frontenac City Lake (SE Pond)","type":"pond","sev":"advisory","status":"lifted","algae":"cyanobacteria","lat":37.453,"lng":-94.687,"url":"https://www.wibw.com/2026/05/01/kdhe-issues-public-health-advisories-several-kansas-lakes/","source_type":"local_news","quote":"As of May 1, 2026, warnings remain for King Lake and Lake Afton; SE pond at Frontenac City Lake in Crawford County lifted from watch in April."},{"id":"20260501-MO-001","date":"2026-05-01","state":"MO","county":"Hickory","name":"Pomme de Terre Lake (Nemo & Wheatland beaches)","type":"reservoir","sev":"closure","algae":"cyanobacteria","lat":37.911,"lng":-93.336,"url":"https://www.nwk.usace.army.mil/Media/News-Releases/Article/4485940/public-health-update-concerning-harmful-algae-at-kansas-city-district-pomme-de/","source_type":"federal_agency","quote":"U.S. Army Corps of Engineers closed two swimming beaches at Pomme de Terre Lake after tests found dangerous levels of toxic blue-green algae. Toxin levels exceeded Missouri's public health warning standards for recreational water contact.","impact":"Federal beach closure"},{"id":"20260518-VA-001","date":"2026-05-18","state":"VA","county":"Page","name":"Lake Arrowhead, Luray","type":"lake","sev":"advisory","algae":"cyanobacteria (suspected)","lat":38.665,"lng":-78.469,"url":"https://www.whsv.com/2026/05/18/town-luray-warns-potentially-harmful-algal-bloom-lake-arrowhead/","source_type":"local_news","quote":"Lake Arrowhead may be experiencing a harmful algal bloom per notice from Town of Luray. Reported to VDH; town advised keeping children and pets out of water with film on surface."}];
+
+// Color by bloom month: cold→warm gradient
+const MONTH_COLORS = {
+  1: '#1e3a8a', 2: '#1d4ed8', 3: '#0891b2', 4: '#059669',
+  5: '#84cc16', 6: '#eab308', 7: '#f59e0b', 8: '#ea580c',
+  9: '#dc2626', 10: '#991b1b', 11: '#7c2d12', 12: '#581c87'
+};
+const MONTH_NAMES = ['', 'January','February','March','April','May','June',
+                     'July','August','September','October','November','December'];
+
+const DOT_RADIUS = 8;
+const SEVERITY_LABEL = {
+  'advisory': {label:'Advisory', color:'#0284c7'},
+  'warning':  {label:'Warning',  color:'#ea580c'},
+  'danger':   {label:'Danger',   color:'#dc2626'},
+  'closure':  {label:'Closure',  color:'#7c2d12'},
+  'unknown':  {label:'Unknown',  color:'#64748b'}
+};
+
+const STATUS_LABEL = {
+  'active': { label: 'Active', color: '#dc2626' },
+  'lifted': { label: 'Lifted', color: '#15803d' }
+};
+
+// Init map — lower 48 bounds
+const map = L.map('map', {
+  center: [38.5, -96.5], zoom: 4, minZoom: 3, maxZoom: 10,
+  maxBounds: [[18, -135], [55, -60]]
+});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contributors',
+  maxZoom: 12
+}).addTo(map);
+
+// Marker cluster group — clusters nearby events at low zoom so Florida is readable
+const clusterGroup = L.markerClusterGroup({
+  maxClusterRadius: 45,
+  showCoverageOnHover: false,
+  spiderfyOnMaxZoom: true,
+  disableClusteringAtZoom: 7
+});
+map.addLayer(clusterGroup);
+
+// Legend
+const legend = L.control({position: 'topright'});
+legend.onAdd = function() {
+  const div = L.DomUtil.create('div', 'legend');
+  let monthHtml = '<h4>Bloom Month</h4>';
+  for (let m = 1; m <= 12; m++) {
+    monthHtml += `<div class="legend-row"><span class="legend-dot" style="background:${MONTH_COLORS[m]}"></span>${MONTH_NAMES[m].slice(0,3)}</div>`;
+  }
+  let sevHtml = '<h4 style="margin-top:10px">Severity (in popup)</h4>';
+  ['advisory','warning','danger','closure'].forEach(s => {
+    const info = SEVERITY_LABEL[s];
+    sevHtml += `<div class="legend-row"><span class="legend-sev" style="width:14px;height:14px;background:${info.color}"></span>${info.label}</div>`;
+  });
+  div.innerHTML = monthHtml + sevHtml;
+  return div;
+};
+legend.addTo(map);
+
+function getMonth(dateStr) { return parseInt(dateStr.split('-')[1], 10); }
+
+// Filter state — month is the time-slider position; the others are the filter-panel inputs
+const filterState = { month: 12, search: '', stateCode: '', status: '' };
+
+function eventMatchesFilters(ev) {
+  if (getMonth(ev.date) > filterState.month) return false;
+  if (filterState.stateCode && ev.state !== filterState.stateCode) return false;
+  const status = ev.status || 'active';
+  if (filterState.status && status !== filterState.status) return false;
+  if (filterState.search) {
+    const q = filterState.search.toLowerCase();
+    const haystack = `${ev.name} ${ev.county} ${ev.state} ${ev.algae || ''}`.toLowerCase();
+    if (haystack.indexOf(q) === -1) return false;
+  }
+  return true;
+}
+
+function render() {
+  clusterGroup.clearLayers();
+  const visible = EVENTS.filter(eventMatchesFilters);
+  const states = new Set();
+
+  visible.forEach(ev => {
+    const m = getMonth(ev.date);
+    const color = MONTH_COLORS[m];
+    const marker = L.circleMarker([ev.lat, ev.lng], {
+      radius: DOT_RADIUS,
+      fillColor: color,
+      color: '#1a202c',
+      weight: 1.5,
+      opacity: 0.95,
+      fillOpacity: 0.78
+    });
+
+    const sevInfo = SEVERITY_LABEL[ev.sev] || SEVERITY_LABEL['unknown'];
+    const statusKey = ev.status || 'active';
+    const statusInfo = STATUS_LABEL[statusKey];
+    const impactHtml = ev.impact ? `<div class="impact">⚠ ${ev.impact}</div>` : '';
+
+    const popupHtml = `
+      <div class="popup-title">${ev.name}</div>
+      <div class="popup-meta">${ev.county} County, ${ev.state} • ${ev.date}</div>
+      <span class="popup-sev" style="background:${sevInfo.color}">${sevInfo.label}</span>
+      <span class="popup-status ${statusKey}">${statusInfo.label}</span>
+      ${impactHtml}
+      <div class="popup-quote">"${ev.quote}"</div>
+      <div class="popup-link">Algae: ${ev.algae}<br><a href="${ev.url}" target="_blank" rel="noopener">Read source →</a></div>
+    `;
+    marker.bindPopup(popupHtml, {maxWidth: 320});
+    clusterGroup.addLayer(marker);
+    states.add(ev.state);
+  });
+
+  document.getElementById('counter').textContent =
+    `${visible.length} HAB events, warnings, and cautions tracked across ${states.size} ${states.size === 1 ? 'state' : 'states'} in 2026`;
+  document.getElementById('month-label').textContent = MONTH_NAMES[filterState.month];
+
+  renderStats();
+}
+
+function renderStats() {
+  const all = EVENTS;
+  const allStates = new Set(all.map(e => e.state));
+  const activeCount = all.filter(e => (e.status || 'active') === 'active').length;
+  const liftedCount = all.length - activeCount;
+  const byState = {};
+  const bySeverity = { advisory: 0, warning: 0, danger: 0, closure: 0 };
+  const byMonth = {};
+  all.forEach(e => {
+    byState[e.state] = (byState[e.state] || 0) + 1;
+    bySeverity[e.sev] = (bySeverity[e.sev] || 0) + 1;
+    const mo = getMonth(e.date);
+    byMonth[mo] = (byMonth[mo] || 0) + 1;
+  });
+  let peakMonth = 1, peakCount = 0;
+  Object.keys(byMonth).forEach(k => {
+    if (byMonth[k] > peakCount) { peakCount = byMonth[k]; peakMonth = parseInt(k, 10); }
+  });
+  const latestMonth = Math.max(...Object.keys(byMonth).map(Number));
+
+  document.getElementById('stats-grid').innerHTML = [
+    `<div class="stat-card"><div class="label">Total events</div><div class="value">${all.length}</div><div class="sub">Jan–${MONTH_NAMES[latestMonth].slice(0,3)} 2026</div></div>`,
+    `<div class="stat-card"><div class="label">States affected</div><div class="value">${allStates.size}</div><div class="sub">of 48 lower</div></div>`,
+    `<div class="stat-card"><div class="label">Active advisories</div><div class="value">${activeCount}</div><div class="sub">${liftedCount} lifted</div></div>`,
+    `<div class="stat-card"><div class="label">Warnings</div><div class="value">${bySeverity.warning}</div><div class="sub">of total events</div></div>`,
+    `<div class="stat-card"><div class="label">Beach closures</div><div class="value">${bySeverity.closure || 0}</div><div class="sub">federal/state</div></div>`,
+    `<div class="stat-card"><div class="label">Peak month</div><div class="value">${MONTH_NAMES[peakMonth].slice(0,3)}</div><div class="sub">${peakCount} events</div></div>`
+  ].join('');
+
+  const ranked = Object.entries(byState).sort((a,b) => b[1] - a[1]);
+  document.getElementById('state-rank-list').innerHTML = ranked.map(([s, c]) =>
+    `<div class="state-rank"><span class="st">${s}</span><span class="ct">${c}</span></div>`
+  ).join('');
+}
+
+// Populate the state dropdown from event data
+const stateSelect = document.getElementById('state-select');
+Array.from(new Set(EVENTS.map(e => e.state))).sort().forEach(s => {
+  const opt = document.createElement('option');
+  opt.value = s; opt.textContent = s;
+  stateSelect.appendChild(opt);
+});
+
+// Wire up the filter panel
+document.getElementById('search-input').addEventListener('input', (e) => {
+  filterState.search = e.target.value.trim(); render();
+});
+document.getElementById('state-select').addEventListener('change', (e) => {
+  filterState.stateCode = e.target.value; render();
+});
+document.getElementById('status-select').addEventListener('change', (e) => {
+  filterState.status = e.target.value; render();
+});
+document.getElementById('filter-reset').addEventListener('click', () => {
+  filterState.search = ''; filterState.stateCode = ''; filterState.status = '';
+  document.getElementById('search-input').value = '';
+  document.getElementById('state-select').value = '';
+  document.getElementById('status-select').value = '';
+  render();
+});
+
+// Slider
+const slider = document.getElementById('slider');
+slider.addEventListener('input', (e) => {
+  filterState.month = parseInt(e.target.value, 10);
+  render();
+});
+
+// Play button — auto-advance through months
+let playing = false;
+let playInterval;
+document.getElementById('play-btn').addEventListener('click', () => {
+  playing = !playing;
+  const btn = document.getElementById('play-btn');
+  if (playing) {
+    btn.textContent = '⏸ Pause';
+    if (filterState.month >= 12) { filterState.month = 1; slider.value = 1; }
+    playInterval = setInterval(() => {
+      if (filterState.month >= 12) {
+        clearInterval(playInterval);
+        playing = false;
+        btn.textContent = '▶ Play';
+        return;
+      }
+      filterState.month++;
+      slider.value = filterState.month;
+      render();
+    }, 900);
+  } else {
+    btn.textContent = '▶ Play';
+    clearInterval(playInterval);
+  }
+});
+
+// Initial render — show through the most recent month present in the data
+const initialMonth = Math.max(...EVENTS.map(e => getMonth(e.date)));
+filterState.month = initialMonth;
+slider.value = initialMonth;
+render();
+</script>
+
+</body>
+</html>
