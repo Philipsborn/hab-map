@@ -468,7 +468,8 @@ const STATUS_LABEL = {
 // Init map — lower 48 bounds
 const map = L.map('map', {
   center: [39.5, -96.0], zoom: 4.4, minZoom: 3.5, maxZoom: 10, zoomSnap: 0,
-  maxBounds: [[23, -127], [51, -65]], maxBoundsViscosity: 0.6
+  maxBounds: [[23, -127], [51, -65]], maxBoundsViscosity: 0.6,
+  scrollWheelZoom: false
 });
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors',
