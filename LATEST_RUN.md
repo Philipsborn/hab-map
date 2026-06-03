@@ -1,14 +1,9 @@
-# HAB comb run 2026-06-02 22:08 UTC
+# HAB comb run 2026-06-03 22:14 UTC
 
-Total events on the map: 58
+Total events on the map: 60
 
-## Added 7
-- MI - Lake Ovid (Sleepy Hollow State Park) (2026-05-27, advisory) - https://www.mmdhd.org/wp-content/uploads/2026/05/Public-Health-Advisory.-Harmful-Algal-Bloom-Confirmed-at-Sleepy-Hollow-in-Clinton-County-5.27.2026.pdf
-- CA - Castaic Lake (2026-06-01, advisory) - https://www.edhat.com/california/news/toxic-algal-blooms-found-in-california-lakes-and-reservoirs/
-- CA - Castaic Lagoon (2026-06-01, advisory) - https://www.edhat.com/california/news/toxic-algal-blooms-found-in-california-lakes-and-reservoirs/
-- CA - Pyramid Lake (2026-06-01, advisory) - https://www.edhat.com/california/news/toxic-algal-blooms-found-in-california-lakes-and-reservoirs/
-- CA - San Luis Reservoir (2026-06-01, warning) - https://www.edhat.com/california/news/toxic-algal-blooms-found-in-california-lakes-and-reservoirs/
-- CA - Lake Del Valle (2026-06-01, advisory) - https://www.edhat.com/california/news/toxic-algal-blooms-found-in-california-lakes-and-reservoirs/
-- CA - Silverwood Lake (2026-06-01, advisory) - https://www.edhat.com/california/news/toxic-algal-blooms-found-in-california-lakes-and-reservoirs/
+## Added 2
+- FL - Lake Okeechobee – S352 (2026-05-20, warning) - https://palmbeach.floridahealth.gov/2026/05/28/doh-palm-beach-lifts-blue-green-algae-health-alert-for-lake-okeechobee-4/
+- FL - Haw Creek – Confluence of Dead Lake, Haw Creek, and Crescent Lake (2026-05-26, warning) - https://www.flaglercountybuzz.com/2026/06/01/doh-flagler-issues-blue-green-agae-health-alert-for-haw-creek-area/
 
 ## Skipped 0

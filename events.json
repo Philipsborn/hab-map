@@ -875,5 +875,35 @@
   "url": "https://www.edhat.com/california/news/toxic-algal-blooms-found-in-california-lakes-and-reservoirs/",
   "source_type": "state_agency",
   "quote": "The following lakes and reservoirs are under advisories: Silverwood Lake: Caution advisory. The California Department of Water Resources is urging residents and visitors to stay cautious around lakes and reservoirs where toxic algal blooms may be present."
+ },
+ {
+  "id": "20260520-FL-001",
+  "date": "2026-05-20",
+  "state": "FL",
+  "county": "Palm Beach",
+  "name": "Lake Okeechobee – S352",
+  "type": "lake",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 26.7765,
+  "lng": -80.7981,
+  "url": "https://palmbeach.floridahealth.gov/2026/05/28/doh-palm-beach-lifts-blue-green-algae-health-alert-for-lake-okeechobee-4/",
+  "source_type": "county_health",
+  "quote": "The Florida Department of Health in Palm Beach County has lifted the health alert issued on May 20, 2026, for harmful blue-green algae toxins in Lake Okeechobee – S352. Follow-up water samples did not detect algae toxins, indicating the public may resume water-related activities."
+ },
+ {
+  "id": "20260526-FL-002",
+  "date": "2026-05-26",
+  "state": "FL",
+  "county": "Flagler",
+  "name": "Haw Creek – Confluence of Dead Lake, Haw Creek, and Crescent Lake",
+  "type": "river",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 29.4755,
+  "lng": -81.352,
+  "url": "https://www.flaglercountybuzz.com/2026/06/01/doh-flagler-issues-blue-green-agae-health-alert-for-haw-creek-area/",
+  "source_type": "county_health",
+  "quote": "The Florida Department of Health in Flagler County has issued a health alert for the presence of harmful blue-green algae toxins in Haw Creek–Confluence of Dead Lake, Haw Creek, and Crescent Lake. The alert is in response to a water sample taken on May 26, 2026."
  }
 ]
