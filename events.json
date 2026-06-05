@@ -905,5 +905,20 @@
   "url": "https://www.flaglercountybuzz.com/2026/06/01/doh-flagler-issues-blue-green-agae-health-alert-for-haw-creek-area/",
   "source_type": "county_health",
   "quote": "The Florida Department of Health in Flagler County has issued a health alert for the presence of harmful blue-green algae toxins in Haw Creek–Confluence of Dead Lake, Haw Creek, and Crescent Lake. The alert is in response to a water sample taken on May 26, 2026."
+ },
+ {
+  "id": "20260602-FL-001",
+  "date": "2026-06-02",
+  "state": "FL",
+  "county": "Seminole",
+  "name": "Lake Jesup",
+  "type": "lake",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 28.6717,
+  "lng": -81.2045,
+  "url": "https://www.mysanfordherald.com/article/3042,doh-seminole-issues-blue-green-algae-health-alert-for-lake-jesup",
+  "source_type": "local_news",
+  "quote": "The Florida Department of Health in Seminole County issued a blue-green algae health alert for Lake Jesup. Health officials said the alert was issued after a water sample taken June 2 showed the presence of harmful blue-green algae toxins."
  }
 ]
