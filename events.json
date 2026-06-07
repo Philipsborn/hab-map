@@ -920,5 +920,50 @@
   "url": "https://www.mysanfordherald.com/article/3042,doh-seminole-issues-blue-green-algae-health-alert-for-lake-jesup",
   "source_type": "local_news",
   "quote": "The Florida Department of Health in Seminole County issued a blue-green algae health alert for Lake Jesup. Health officials said the alert was issued after a water sample taken June 2 showed the presence of harmful blue-green algae toxins."
+ },
+ {
+  "id": "20260526-FL-001",
+  "date": "2026-05-26",
+  "state": "FL",
+  "county": "Hillsborough",
+  "name": "Lake Thonotosassa",
+  "type": "lake",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 28.0094,
+  "lng": -82.2762,
+  "url": "https://hillsborough.floridahealth.gov/2026/05/26/doh-hillsborough-issues-blue-green-algae-health-alert-for-lake-thonotosassa-10/",
+  "source_type": "state_agency",
+  "quote": "DOH-Hillsborough issued a health alert for the presence of harmful blue-green algae toxins in Lake Thonotosassa in response to a water sample taken on May 18, 2026."
+ },
+ {
+  "id": "20260605-KS-001",
+  "date": "2026-06-05",
+  "state": "KS",
+  "county": "Sedgwick",
+  "name": "Chisholm Ridge Ponds",
+  "type": "pond",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 37.7561,
+  "lng": -97.4694,
+  "url": "https://www.kake.com/home/blue-green-algae-warnings-affect-seven-kansas-lakes/article_493ae4e6-0a54-4988-9ba2-dc636307e78b.html",
+  "source_type": "state_agency",
+  "quote": "KDHE and KDWP issued a public health advisory for five Kansas lakes, including Lake Afton and Chisholm Ridge Ponds in Sedgwick County, due to blue-green algae."
+ },
+ {
+  "id": "20260605-KS-002",
+  "date": "2026-06-05",
+  "state": "KS",
+  "county": "Morris",
+  "name": "Council Grove City Lake",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 38.6608,
+  "lng": -96.4919,
+  "url": "https://www.kake.com/home/blue-green-algae-warnings-affect-seven-kansas-lakes/article_493ae4e6-0a54-4988-9ba2-dc636307e78b.html",
+  "source_type": "state_agency",
+  "quote": "Frontenac City Lake (Southeast Pond) in Crawford County and Council Grove City Lake in Morris County are currently under Watch, meaning a HAB is possible and may be present."
  }
 ]
