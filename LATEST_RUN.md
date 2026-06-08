@@ -1,10 +1,13 @@
-# HAB comb run 2026-06-07 16:55 UTC
+# HAB comb run 2026-06-08 19:55 UTC
 
-Total events on the map: 64
+Total events on the map: 68
 
-## Added 3
-- FL - Lake Thonotosassa (2026-05-26, warning) - https://hillsborough.floridahealth.gov/2026/05/26/doh-hillsborough-issues-blue-green-algae-health-alert-for-lake-thonotosassa-10/
-- KS - Chisholm Ridge Ponds (2026-06-05, warning) - https://www.kake.com/home/blue-green-algae-warnings-affect-seven-kansas-lakes/article_493ae4e6-0a54-4988-9ba2-dc636307e78b.html
-- KS - Council Grove City Lake (2026-06-05, advisory) - https://www.kake.com/home/blue-green-algae-warnings-affect-seven-kansas-lakes/article_493ae4e6-0a54-4988-9ba2-dc636307e78b.html
+## Added 4
+- FL - Lake Okeechobee – S352 (2026-06-03, advisory) - https://palmbeach.floridahealth.gov/2026/06/05/doh-palm-beach-cautions-about-blue-green-algae-at-lake-okeechobee-52/
+- KS - Wellington Lake (2026-06-05, advisory) - https://www.ksn.com/news/health/seven-kansas-lakes-under-toxic-algae-watches-warnings/
+- OR - Upper Klamath National Wildlife Refuge (2026-05-28, advisory) - https://www.kdrv.com/news/healthwatch/health-advisory-and-warning-issued-for-upper-klamath-national-wildlife-refuge/article_1f3077c0-0a5f-4fb0-a865-5897b72baa96.html
+- OR - Sturgeon Lake (2026-05-29, advisory) - https://www.oregonvma.org/toxic-algae-advisories
 
-## Skipped 0
+## Skipped 2
+- Gathering Pond: duplicate
+- Jewell State Fishing Lake: duplicate
