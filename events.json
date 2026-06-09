@@ -1025,5 +1025,20 @@
   "url": "https://www.oregonvma.org/toxic-algae-advisories",
   "source_type": "state_agency",
   "quote": "Sturgeon Lake in Multnomah and Columbia Counties was placed under a Precaution advisory for cyanobacteria harmful algal blooms on May 29, 2026."
+ },
+ {
+  "id": "20260601-KS-001",
+  "date": "2026-06-01",
+  "state": "KS",
+  "county": "Greenwood",
+  "name": "Eureka Lake",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 37.8228,
+  "lng": -96.2928,
+  "url": "https://www.kwch.com/video/2026/06/02/kdhe-issues-advisory-eureka-lake/",
+  "source_type": "local_news",
+  "quote": "KDHE issued a public health advisory for Eureka Lake due to blue-green algae on approximately June 1, 2026."
  }
 ]
