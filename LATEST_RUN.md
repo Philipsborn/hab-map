@@ -1,9 +1,9 @@
-# HAB comb run 2026-06-10 21:25 UTC
+# HAB comb run 2026-06-11 20:41 UTC
 
-Total events on the map: 69
+Total events on the map: 71
 
-## Added 0
+## Added 2
+- TX - Lady Bird Lake (2026-06-09, advisory) - https://www.kut.org/austin/2026-06-09/toxic-blue-green-algae-austin-lady-bird-dogs-cyanobacteria
+- TX - Lake Austin (2026-06-09, advisory) - https://www.kut.org/austin/2026-06-09/toxic-blue-green-algae-austin-lady-bird-dogs-cyanobacteria
 
-## Skipped 2
-- Gathering Pond: duplicate
-- Jewell State Fishing Lake: duplicate
+## Skipped 0

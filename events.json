@@ -1040,5 +1040,35 @@
   "url": "https://www.kwch.com/video/2026/06/02/kdhe-issues-advisory-eureka-lake/",
   "source_type": "local_news",
   "quote": "KDHE issued a public health advisory for Eureka Lake due to blue-green algae on approximately June 1, 2026."
+ },
+ {
+  "id": "20260609-TX-001",
+  "date": "2026-06-09",
+  "state": "TX",
+  "county": "Travis",
+  "name": "Lady Bird Lake",
+  "type": "reservoir",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 30.25,
+  "lng": -97.71,
+  "url": "https://www.kut.org/austin/2026-06-09/toxic-blue-green-algae-austin-lady-bird-dogs-cyanobacteria",
+  "source_type": "local_news",
+  "quote": "Austin's Watershed Protection Department says its staff has observed thick 'mats' of the bacteria floating near Red Bud Isle on Lady Bird Lake. Watershed Protection urged people to avoid all contact with the algae."
+ },
+ {
+  "id": "20260609-TX-002",
+  "date": "2026-06-09",
+  "state": "TX",
+  "county": "Travis",
+  "name": "Lake Austin",
+  "type": "reservoir",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 30.353,
+  "lng": -97.801,
+  "url": "https://www.kut.org/austin/2026-06-09/toxic-blue-green-algae-austin-lady-bird-dogs-cyanobacteria",
+  "source_type": "local_news",
+  "quote": "Austin's Watershed Protection Department observed thick mats of cyanobacteria near Walsh Boat Landing on Lake Austin; residents were urged to avoid all contact with the algae and stagnant or murky water."
  }
 ]
