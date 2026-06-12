@@ -1070,5 +1070,35 @@
   "url": "https://www.kut.org/austin/2026-06-09/toxic-blue-green-algae-austin-lady-bird-dogs-cyanobacteria",
   "source_type": "local_news",
   "quote": "Austin's Watershed Protection Department observed thick mats of cyanobacteria near Walsh Boat Landing on Lake Austin; residents were urged to avoid all contact with the algae and stagnant or murky water."
+ },
+ {
+  "id": "20260611-CO-001",
+  "date": "2026-06-11",
+  "state": "CO",
+  "county": "Morgan",
+  "name": "Jackson Lake State Wildlife Area",
+  "type": "reservoir",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 40.6153,
+  "lng": -103.9814,
+  "url": "https://www.9news.com/article/tech/science/environment/toxic-algae-bloom-detected-at-jackson-lake-prompting-water-warnings/73-4b833fe2-d8ec-4a62-be2d-5b6df7ee3ceb",
+  "source_type": "local_news",
+  "quote": "Colorado Parks and Wildlife has detected toxic algae at Jackson Lake in northeast Colorado, prompting officials to post warning signs and restrict water contact at parts of the reservoir. Red alerts have been posted at the boat ramps, where officials say people should not come into contact with the water."
+ },
+ {
+  "id": "20260608-CO-002",
+  "date": "2026-06-08",
+  "state": "CO",
+  "county": "Boulder",
+  "name": "Longmont City Lakes and Ponds",
+  "type": "pond",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 40.1672,
+  "lng": -105.1019,
+  "url": "https://www.longmontleader.com/local-news/the-summer-of-slime-longmont-warns-residents-about-harmful-toxic-algae-blooms-12407723",
+  "source_type": "local_news",
+  "quote": "The City of Longmont issued the warning June 8, reminding residents that blue-green algae, also known as cyanobacteria, can rapidly multiply in lakes and ponds during the summer and may produce toxins that are harmful to people, pets, and wildlife."
  }
 ]
