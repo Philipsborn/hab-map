@@ -1100,5 +1100,20 @@
   "url": "https://www.longmontleader.com/local-news/the-summer-of-slime-longmont-warns-residents-about-harmful-toxic-algae-blooms-12407723",
   "source_type": "local_news",
   "quote": "The City of Longmont issued the warning June 8, reminding residents that blue-green algae, also known as cyanobacteria, can rapidly multiply in lakes and ponds during the summer and may produce toxins that are harmful to people, pets, and wildlife."
+ },
+ {
+  "id": "20260611-NY-001",
+  "date": "2026-06-11",
+  "state": "NY",
+  "county": "Rockland",
+  "name": "Lake Welch (Harriman State Park)",
+  "type": "lake",
+  "sev": "closure",
+  "algae": "cyanobacteria",
+  "lat": 41.2337,
+  "lng": -74.1135,
+  "url": "https://apps.cio.ny.gov/apps/mediacontact/public/view.cfm?parm=21B9F6AE-EFAA-78C9-070F3E2AAC6E8398&backButton=",
+  "source_type": "state_agency",
+  "quote": "Lake Welch Beach and Picnic Grounds in Harriman State Park are CLOSED until further notice due to a Harmful Algal Bloom (HAB) that has affected all of Lake Welch. The Lake Welch boat launch is also closed for boating and kayaking for algaecide treatment."
  }
 ]
