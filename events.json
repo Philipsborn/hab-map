@@ -1115,5 +1115,20 @@
   "url": "https://apps.cio.ny.gov/apps/mediacontact/public/view.cfm?parm=21B9F6AE-EFAA-78C9-070F3E2AAC6E8398&backButton=",
   "source_type": "state_agency",
   "quote": "Lake Welch Beach and Picnic Grounds in Harriman State Park are CLOSED until further notice due to a Harmful Algal Bloom (HAB) that has affected all of Lake Welch. The Lake Welch boat launch is also closed for boating and kayaking for algaecide treatment."
+ },
+ {
+  "id": "20260604-WA-001",
+  "date": "2026-06-04",
+  "state": "WA",
+  "county": "Clark",
+  "name": "Lacamas Lake",
+  "type": "lake",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 45.5879,
+  "lng": -122.3984,
+  "url": "https://www.yahoo.com/news/dangerous-algae-blooms-lacamas-lake-192308217.html",
+  "source_type": "local_news",
+  "quote": "Dangerous toxin levels have been detected in Lacamas Lake, leading to a Clark County Public Health advisory against spending time in the water. The presence of cyanotoxins were first reported Wednesday, June 4."
  }
 ]

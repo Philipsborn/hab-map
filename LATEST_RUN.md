@@ -1,8 +1,8 @@
-# HAB comb run 2026-06-13 17:03 UTC
+# HAB comb run 2026-06-14 17:02 UTC
 
-Total events on the map: 74
+Total events on the map: 75
 
 ## Added 1
-- NY - Lake Welch (Harriman State Park) (2026-06-11, closure) - https://apps.cio.ny.gov/apps/mediacontact/public/view.cfm?parm=21B9F6AE-EFAA-78C9-070F3E2AAC6E8398&backButton=
+- WA - Lacamas Lake (2026-06-04, warning) - https://www.yahoo.com/news/dangerous-algae-blooms-lacamas-lake-192308217.html
 
 ## Skipped 0
