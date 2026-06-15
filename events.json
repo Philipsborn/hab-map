@@ -1130,5 +1130,50 @@
   "url": "https://www.yahoo.com/news/dangerous-algae-blooms-lacamas-lake-192308217.html",
   "source_type": "local_news",
   "quote": "Dangerous toxin levels have been detected in Lacamas Lake, leading to a Clark County Public Health advisory against spending time in the water. The presence of cyanotoxins were first reported Wednesday, June 4."
+ },
+ {
+  "id": "20260612-OR-001",
+  "date": "2026-06-12",
+  "state": "OR",
+  "county": "Jefferson",
+  "name": "Lake Billy Chinook",
+  "type": "reservoir",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 44.5891,
+  "lng": -121.365,
+  "url": "https://bendbulletin.com/2026/06/15/recreational-use-advisory-for-lake-billy-chinook/",
+  "source_type": "local_news",
+  "quote": "The Oregon Health Authority has issued a recreational use health advisory for Lake Billy Chinook due to the presence of a cyanobacteria bloom, advising people to avoid swimming and high-speed water activities where blooms are present."
+ },
+ {
+  "id": "20260612-OR-002",
+  "date": "2026-06-12",
+  "state": "OR",
+  "county": "Klamath",
+  "name": "Gerber Reservoir",
+  "type": "reservoir",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 42.2072,
+  "lng": -121.0894,
+  "url": "https://www.oregonvma.org/toxic-algae-advisories",
+  "source_type": "state_agency",
+  "quote": "Gerber Reservoir in Klamath County received a PRECAUTION designation on 6.12.26 for cyanobacteria harmful algal bloom activity."
+ },
+ {
+  "id": "20260605-OR-003",
+  "date": "2026-06-05",
+  "state": "OR",
+  "county": "Coos",
+  "name": "South Tenmile Lake",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 43.4718,
+  "lng": -124.2054,
+  "url": "https://www.oregonvma.org/toxic-algae-advisories",
+  "source_type": "state_agency",
+  "quote": "South Tenmile Lake in Coos County received a PRECAUTION designation on 6.5.26 for a cyanobacteria harmful algal bloom."
  }
 ]
