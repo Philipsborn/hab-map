@@ -1175,5 +1175,20 @@
   "url": "https://www.oregonvma.org/toxic-algae-advisories",
   "source_type": "state_agency",
   "quote": "South Tenmile Lake in Coos County received a PRECAUTION designation on 6.5.26 for a cyanobacteria harmful algal bloom."
+ },
+ {
+  "id": "20260611-FL-001",
+  "date": "2026-06-11",
+  "state": "FL",
+  "county": "Marion",
+  "name": "Lake Bryant – Resort Dock",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 29.458,
+  "lng": -82.051,
+  "url": "https://marion.floridahealth.gov/2026/04/17/doh-marion-issues-blue-green-algae-health-alert-for-orange-lake-eagles-nest-dock/",
+  "source_type": "state_agency",
+  "quote": "DOH-Marion cautions the public of the presence of blue-green algae in Lake Bryant Resort Dock on June 11; water sample testing is underway."
  }
 ]

@@ -1,11 +1,9 @@
-# HAB comb run 2026-06-15 21:50 UTC
+# HAB comb run 2026-06-16 21:49 UTC
 
-Total events on the map: 78
+Total events on the map: 79
 
-## Added 3
-- OR - Lake Billy Chinook (2026-06-12, advisory) - https://bendbulletin.com/2026/06/15/recreational-use-advisory-for-lake-billy-chinook/
-- OR - Gerber Reservoir (2026-06-12, advisory) - https://www.oregonvma.org/toxic-algae-advisories
-- OR - South Tenmile Lake (2026-06-05, advisory) - https://www.oregonvma.org/toxic-algae-advisories
+## Added 1
+- FL - Lake Bryant – Resort Dock (2026-06-11, advisory) - https://marion.floridahealth.gov/2026/04/17/doh-marion-issues-blue-green-algae-health-alert-for-orange-lake-eagles-nest-dock/
 
 ## Skipped 2
 - Lake Shawnee: duplicate
