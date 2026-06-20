@@ -64,6 +64,7 @@ For EACH new event, output a JSON object with EXACTLY these fields:
 
 RULES:
 - Do NOT fabricate. If you cannot find a real source URL, do not include the event.
+- INCLUDE the event even if the advisory was later LIFTED, downgraded, rescinded, or the bloom has since dissipated. If it was a real 2026 HAB advisory, warning, caution, closure, illness, or death at any point during 2026, it belongs on the map. Use the original issue or sample date. Never exclude an event solely because it is no longer active.
 - Coordinates must fall inside the lower 48 (lat 24-50, lng -125 to -66).
 - Do NOT include any event already in the EXISTING list below (match by water body
   + state + nearby date). Only return events that are genuinely new.
