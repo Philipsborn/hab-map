@@ -1580,5 +1580,35 @@
   "url": "https://wwmt.com/news/local/public-health-advisory-austin-lake-portage-harmful-algal-bloom-microcystin-cyanobacteria-toxins-animals-death-illness-kalamazoo-county-health-services",
   "source_type": "local_news",
   "quote": "A public health advisory was issued for Austin Lake in Portage. According to the Kalamazoo County Health and Community Services Department, sampling came back positive for microcystin, a cyanobacteria that can produce toxins. Recreational activities can continue with precautions."
+ },
+ {
+  "id": "20260605-AZ-101",
+  "date": "2026-06-05",
+  "state": "AZ",
+  "county": "Gila",
+  "name": "San Carlos Lake (San Carlos Reservoir)",
+  "type": "reservoir",
+  "sev": "closure",
+  "algae": "cyanobacteria (contributory)",
+  "lat": 33.18,
+  "lng": -110.42,
+  "url": "https://gilaherald.com/san-carlos-lake-closed-indefinitely-following-catastrophic-100-fish-kill/",
+  "source_type": "local_news",
+  "quote": "San Carlos Lake, one of eastern Arizona's most prominent recreational fisheries, has been shut down indefinitely. The San Carlos Recreation and Wildlife Department issued an emergency closure notice on June 5, 2026, after an environmental catastrophe wiped out virtually the entire fish population. Severe and prolonged drought, exacerbated by downstream agricultural water releases, triggered an ecosystem collapse in which stagnant, warm, nutrient-dense water accelerated the growth of massive algal blooms."
+ },
+ {
+  "id": "20260309-FL-101",
+  "date": "2026-03-09",
+  "state": "FL",
+  "county": "Osceola",
+  "name": "Lake Marian - Pavilion Area",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 27.9,
+  "lng": -81.06,
+  "url": "https://www.wftv.com/news/local/blue-green-algae-alert-issued-osceola-county-lake-by-department-health/HT2CEFSKDRHCPD3E6OJODZWODY/",
+  "source_type": "local_news",
+  "quote": "The Florida Department of Health in Osceola County (DOH-Osceola) cautions the public about the presence of harmful blue-green algae toxins in the center of Lake Marian-Pavilion Area. With water sample testing underway, blue-green algae have the potential to produce toxins. Since environmental conditions can change at any time, it is essential to exercise caution, even if the presence of toxins has not yet been confirmed."
  }
 ]
