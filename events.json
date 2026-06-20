@@ -1415,5 +1415,35 @@
   "url": "https://www.kdhe.ks.gov/m/newsflash/home/detail/683",
   "source_type": "state_agency",
   "quote": "Lake Parsons in Neosho County was added to the watch list on June 15, 2026, as part of a KDHE and KDWP public health advisory update due to blue-green algae."
+ },
+ {
+  "id": "20260605-FL-001",
+  "date": "2026-06-05",
+  "state": "FL",
+  "county": "Seminole",
+  "name": "Lake Howell",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 28.6489,
+  "lng": -81.3145,
+  "url": "https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/aquatic-toxins/where-are-habs/",
+  "source_type": "state_agency",
+  "quote": "Blue-Green Algae Health Alert for Seminole County Lake Howell issued 06-05-26. Health Alert is issued when cyanotoxin is present."
+ },
+ {
+  "id": "20260605-FL-002",
+  "date": "2026-06-05",
+  "state": "FL",
+  "county": "Hardee",
+  "name": "Peace River at Wauchula",
+  "type": "river",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 27.5467,
+  "lng": -81.8112,
+  "url": "https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/aquatic-toxins/where-are-habs/",
+  "source_type": "state_agency",
+  "quote": "Blue-Green Algae Health Caution for Hardee County Peace River at Wauchula issued 06-05-26. Health Caution is issued when DEP sampling results show a bloom has been visually detected."
  }
 ]
