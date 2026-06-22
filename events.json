@@ -1775,5 +1775,20 @@
   "url": "https://www.oregon.gov/oha/ph/healthyenvironments/recreation/harmfulalgaeblooms/pages/blue-greenalgaeadvisories.aspx",
   "source_type": "state_agency",
   "quote": "Permanent advisory: pools in the bedrock along the South Umpqua and Umpqua Rivers are known to develop cyanobacteria blooms harmful to pets and people; signs posted at several access areas."
+ },
+ {
+  "id": "20260602-NJ-001",
+  "date": "2026-06-02",
+  "state": "NJ",
+  "county": "Warren",
+  "name": "Mountain Lake",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 40.9968,
+  "lng": -74.8513,
+  "url": "https://wrnjradio.com/mountain-lake-remains-under-algae-advisory-despite-improving-conditions/",
+  "source_type": "local_news",
+  "quote": "Mountain Lake remains under an advisory for blue-green algae; results released June 19 showed toxin levels of 2.19 micrograms per liter, slightly above the state's advisory threshold."
  }
 ]
