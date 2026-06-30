@@ -20,8 +20,8 @@ from anthropic import Anthropic
 EVENTS_FILE  = "events.json"
 SUMMARY_FILE = "LATEST_RUN.md"
 MODEL          = os.environ.get("HAB_MODEL", "claude-sonnet-4-6")
-LOOKBACK_DAYS  = int(os.environ.get("HAB_LOOKBACK_DAYS", "10"))
-MAX_SEARCHES   = int(os.environ.get("HAB_MAX_SEARCHES", "12"))  # caps API cost per run
+LOOKBACK_DAYS  = int(os.environ.get("HAB_LOOKBACK_DAYS", "21"))
+MAX_SEARCHES   = int(os.environ.get("HAB_MAX_SEARCHES", "25"))  # caps API cost per run
 
 
 def load_events():
@@ -43,9 +43,21 @@ A HAB is any reported bloom of cyanobacteria / blue-green algae, red tide
 triggered a public advisory, warning, closure, illness, or death. Lower 48 only.
 Exclude Alaska, Hawaii, territories, and anything outside the United States.
 
-Use web search across: state environmental/health agency advisory pages, county
-health departments, EPA/NOAA, and credible local news. Search broadly across many
-states, not just Florida.
+Use web search aggressively across MANY states every run, not just Florida. Check these
+authoritative state HAB dashboards and advisory pages by name, plus their host agencies:
+- Nevada: Nevada Office of State Epidemiology HAB page (nvose.org)
+- Kansas: KDHE / KDWP blue-green algae public health advisory list
+- Florida: county Department of Health blue-green algae alerts; FWC red tide status
+- California: CCHAB network and State Water Board (waterboards.ca.gov) bloom reports
+- New York: DEC NYHABS notifications list
+- Ohio, Michigan, Wisconsin, Minnesota, Indiana: state EPA / DNR / health beach and HAB dashboards
+- Oregon, Utah, Washington, Arizona, Colorado, Nebraska: state HAB advisory pages
+- Federal / multistate: EPA CyAN, NOAA, USACE lake and swim-beach closures, USGS
+In summer (June through September) prioritize the Great Lakes, Upper Midwest, and Northeast,
+where bloom volume peaks, in addition to the year-round Sunbelt sources. Run enough distinct
+searches to cover at least 8 to 10 different states each run. Map source severity language to
+the schema: a state "watch" maps to advisory, "warning" maps to warning, a beach or lake
+"closure" maps to closure, and life-threatening or extreme levels map to danger.
 
 For EACH new event, output a JSON object with EXACTLY these fields:
   "id"          : "YYYYMMDD-XX-NNN"  (date + 2-letter state + a number)
