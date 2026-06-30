@@ -1,6 +1,6 @@
-# HAB comb run 2026-06-29 15:51 UTC
+# HAB comb run 2026-06-30 01:45 UTC
 
-Total events on the map: 119
+Total events on the map: 131
 
 ## Added 0
 
