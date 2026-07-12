@@ -3,25 +3,37 @@
 HAB Comb Agent  -  Hydralife Solutions
 --------------------------------------
 Runs daily on GitHub Actions. Finds NEW U.S. (lower-48) harmful algae bloom
-advisories reported recently, verifies + geocodes them, dedupes against the
+events reported recently, verifies + geocodes them, dedupes against the
 existing events.json, and appends the new ones. The live map (index.html)
 reads events.json, so anything added here shows up on the map automatically.
 
+Policy:
+- CONFIRMED HABs only. An event is added only when an agency has confirmed a
+  bloom (visual confirmation by staff, lab toxin/cell-count results, or an
+  official recreational advisory / warning / closure). Unconfirmed "possible",
+  "suspected", "under investigation", "pending", "at risk", and citizen-only
+  reports are excluded.
+
 Safety:
 - Append-only. It never deletes or rewrites existing events.
-- Validates every new event (required fields, lower-48 coords, real URL, ISO date).
-- If the model returns nothing or errors, events.json is left untouched.
-- Writes LATEST_RUN.md each run so you have a plain-English review trail.
+- Validates every new event (required fields, canonical type, lower-48 coords,
+  real URL, ISO date, confirmation language).
+- If the model errors (e.g. API credit exhausted), events.json is left untouched
+  and the job FAILS LOUDLY (red run + ::error:: annotation) instead of writing a
+  green "Added 0" that hides the failure.
+- Writes LATEST_RUN.md on each successful run for a plain-English review trail.
 """
 
-import json, os, re, datetime
+import json, os, re, sys, datetime
 from anthropic import Anthropic
 
 EVENTS_FILE  = "events.json"
 SUMMARY_FILE = "LATEST_RUN.md"
-MODEL          = os.environ.get("HAB_MODEL", "claude-sonnet-4-6")
+MODEL          = os.environ.get("HAB_MODEL", "claude-sonnet-4-5")
 LOOKBACK_DAYS  = int(os.environ.get("HAB_LOOKBACK_DAYS", "21"))
 MAX_SEARCHES   = int(os.environ.get("HAB_MAX_SEARCHES", "25"))  # caps API cost per run
+
+CANONICAL_TYPES = {"lake","reservoir","pond","river","canal","coastal","other"}
 
 
 def load_events():
@@ -35,13 +47,24 @@ def norm_key(e):
 
 
 PROMPT = """You are the HAB Discovery Agent for Hydralife Solutions. Your job is to
-find NEW harmful algae bloom (HAB) events reported in the United States lower 48
-states in roughly the last {days} days, and return them as clean JSON.
+find NEW, AGENCY-CONFIRMED harmful algae bloom (HAB) events in the United States
+lower 48 states from roughly the last {days} days, and return them as clean JSON.
 
-A HAB is any reported bloom of cyanobacteria / blue-green algae, red tide
-(Karenia brevis), golden alga (Prymnesium parvum), or any algae bloom that has
-triggered a public advisory, warning, closure, illness, or death. Lower 48 only.
-Exclude Alaska, Hawaii, territories, and anything outside the United States.
+WHAT COUNTS (confirmed only):
+A HAB for this map is a bloom of cyanobacteria / blue-green algae, red tide
+(Karenia brevis), or golden alga (Prymnesium parvum) that an agency has CONFIRMED
+in one of these ways:
+  - a state, federal, or county agency visually confirmed the bloom, OR
+  - laboratory results confirmed cyanotoxins or a cell-count exceedance, OR
+  - an agency issued an official recreational advisory, warning, or closure.
+Lower 48 only. Exclude Alaska, Hawaii, territories, and anything outside the U.S.
+
+WHAT TO EXCLUDE (do NOT add these):
+  - Unconfirmed or citizen-only reports an agency has not confirmed.
+  - Anything described as "possible", "suspected", "under investigation",
+    "awaiting results", "pending", or a water body merely "at risk".
+  - Pure bacteria / E. coli beach advisories with no algal-toxin component.
+  When in doubt, leave it out.
 
 Use web search aggressively across MANY states every run, not just Florida. Check these
 authoritative state HAB dashboards and advisory pages by name, plus their host agencies:
@@ -59,29 +82,35 @@ searches to cover at least 8 to 10 different states each run. Map source severit
 the schema: a state "watch" maps to advisory, "warning" maps to warning, a beach or lake
 "closure" maps to closure, and life-threatening or extreme levels map to danger.
 
-For EACH new event, output a JSON object with EXACTLY these fields:
+For EACH new confirmed event, output a JSON object with EXACTLY these fields:
   "id"          : "YYYYMMDD-XX-NNN"  (date + 2-letter state + a number)
   "date"        : "YYYY-MM-DD"       (date bloom was observed/sampled/reported)
   "state"       : two-letter state code
   "county"      : county name
   "name"        : water body name
-  "type"        : lake / reservoir / pond / river / stream / canal / coastal / other
+  "type"        : lake / reservoir / pond / river / canal / coastal / other
+                  (use "river" for streams and creeks)
   "sev"         : advisory / warning / danger / closure
   "algae"       : e.g. "cyanobacteria", "Karenia brevis", "Prymnesium parvum"
   "lat"         : decimal latitude (geocode the water body; centroid is fine)
   "lng"         : decimal longitude
   "url"         : the primary source URL
-  "source_type" : state_agency / federal_agency / county_health / local_news / citizen_report
-  "quote"       : a short factual summary drawn from the source (1-3 sentences)
+  "source_type" : state_agency / federal_agency / county_health / local_news
+  "quote"       : a short factual summary from the source that shows the bloom was
+                  confirmed (name the confirming agency, toxin/cell result, or the
+                  advisory/closure that was issued). 1-3 sentences.
 
 RULES:
 - Do NOT fabricate. If you cannot find a real source URL, do not include the event.
-- INCLUDE the event even if the advisory was later LIFTED, downgraded, rescinded, or the bloom has since dissipated. If it was a real 2026 HAB advisory, warning, caution, closure, illness, or death at any point during 2026, it belongs on the map. Use the original issue or sample date. Never exclude an event solely because it is no longer active.
+- Include an event even if the advisory was later LIFTED, downgraded, or the bloom
+  has dissipated, AS LONG AS it was an agency-confirmed HAB at some point in 2026.
+  Use the original issue or sample date. But NEVER include an event that was only
+  ever a possible / suspected / unconfirmed report.
 - Coordinates must fall inside the lower 48 (lat 24-50, lng -125 to -66).
 - Do NOT include any event already in the EXISTING list below (match by water body
   + state + nearby date). Only return events that are genuinely new.
 - Output ONLY a single JSON array of the new event objects, nothing else.
-  If there are no new events, output exactly: []
+  If there are no new confirmed events, output exactly: []
 
 EXISTING events already on the map (state | name | date):
 {existing}
@@ -108,9 +137,39 @@ def extract_json_array(text):
 
 REQUIRED = ["id","date","state","county","name","type","sev","algae","lat","lng","url","source_type","quote"]
 
+# Language that indicates an agency actually confirmed the bloom.
+CONFIRMED_RE = re.compile(
+    r"confirm|µg/?l|ug/?l|ppb|cells?/ml|cell count|microcystin|anatoxin|"
+    r"cylindrospermopsin|saxitoxin|toxin.{0,20}(detect|exceed|measur)|"
+    r"(detect|exceed|measur).{0,20}(microcyst|anatox|cylindro|saxitox|toxin)|"
+    r"do not (swim|contact|use)|avoid (all )?(water )?contact|"
+    r"health (alert|advisory) (issued|posted)|closure|beach closed", re.I)
+
+# Language that means the event is NOT confirmed and should be excluded.
+UNCONFIRMED_RE = re.compile(
+    r"\bpossible\b|report of possible|public (bloom )?report|reported by the public|"
+    r"\bsuspected\b|under investigation|\bpending\b|awaiting results|\bat risk\b|"
+    r"photos? (show|indicate|appear)", re.I)
+
+
+def looks_confirmed(e):
+    """True only if the event reads as an agency-confirmed HAB."""
+    q  = str(e.get("quote", ""))
+    st = str(e.get("source_type", ""))
+    strong = bool(CONFIRMED_RE.search(q))
+    if UNCONFIRMED_RE.search(q) and not strong:
+        return False
+    if st == "citizen_report" and not strong:
+        return False
+    return True
+
 
 def valid_event(e):
     if not all(k in e and e[k] not in (None, "") for k in REQUIRED):
+        return False
+    if str(e.get("type")).lower() not in CANONICAL_TYPES:
+        return False
+    if str(e.get("sev")).lower() not in {"advisory","warning","danger","closure"}:
         return False
     try:
         lat, lng = float(e["lat"]), float(e["lng"])
@@ -121,6 +180,8 @@ def valid_event(e):
     if not re.match(r"^\d{4}-\d{2}-\d{2}$", str(e["date"])):
         return False
     if not str(e["url"]).startswith("http"):
+        return False
+    if not looks_confirmed(e):
         return False
     return True
 
@@ -136,16 +197,19 @@ def main():
     prompt = PROMPT.format(days=LOOKBACK_DAYS, existing=existing_lines)
 
     try:
-        text = call_claude(prompt)
+        text  = call_claude(prompt)
         found = extract_json_array(text)
     except Exception as ex:
-        print("Run error (events.json left unchanged):", ex)
-        found = []
+        # Fail loudly: leave events.json + LATEST_RUN.md untouched and make the
+        # GitHub Actions run go RED so a dead run can't masquerade as success.
+        msg = str(ex)
+        print(f"::error::HAB comb failed, events.json left unchanged: {msg}")
+        sys.exit(1)
 
     added, skipped = [], []
     for e in found:
         if not valid_event(e):
-            skipped.append((e.get("name", "?"), "failed validation"))
+            skipped.append((e.get("name", "?"), "failed validation / not confirmed"))
             continue
         if e["id"] in ids or norm_key(e) in keys:
             skipped.append((e.get("name", "?"), "duplicate"))
@@ -161,7 +225,7 @@ def main():
     with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
         f.write(f"# HAB comb run {datetime.datetime.utcnow():%Y-%m-%d %H:%M} UTC\n\n")
         f.write(f"Total events on the map: {len(events)}\n\n")
-        f.write(f"## Added {len(added)}\n")
+        f.write(f"## Added {len(added)} (confirmed only)\n")
         for e in added:
             f.write(f"- {e['state']} - {e['name']} ({e['date']}, {e['sev']}) - {e['url']}\n")
         f.write(f"\n## Skipped {len(skipped)}\n")
