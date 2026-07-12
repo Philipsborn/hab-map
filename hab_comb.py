@@ -2,15 +2,23 @@
 """
 HAB Comb Agent  -  Hydralife Solutions
 --------------------------------------
-Runs daily on GitHub Actions. Finds NEW U.S. (lower-48) harmful algae bloom
-events reported recently, verifies + geocodes them, dedupes against the
-existing events.json, and appends the new ones. The live map (index.html)
-reads events.json, so anything added here shows up on the map automatically.
+Runs weekly on GitHub Actions. Adds NEW U.S. (lower-48) harmful algae bloom
+events from two sources, dedupes them against the existing events.json, and
+appends the new ones. The live map (index.html) reads events.json, so anything
+added here shows up on the map automatically.
+
+Sources:
+1. California direct API - data.ca.gov Freshwater HAB dataset (a stable public
+   API). Pulls this year's cases where California actually recommended an
+   advisory (Caution / Warning / Danger / posted algal-mat alert). Reliable and
+   not model-dependent.
+2. The comb - Claude with web search, for every other state, using the confirmed
+   -only policy below.
 
 Policy:
 - CONFIRMED HABs only. An event is added only when an agency has confirmed a
-  bloom (visual confirmation by staff, lab toxin/cell-count results, or an
-  official recreational advisory / warning / closure). Unconfirmed "possible",
+  bloom (visual confirmation, lab toxin/cell-count results, or an official
+  recreational advisory / warning / closure). Unconfirmed "possible",
   "suspected", "under investigation", "pending", "at risk", and citizen-only
   reports are excluded.
 
@@ -18,13 +26,13 @@ Safety:
 - Append-only. It never deletes or rewrites existing events.
 - Validates every new event (required fields, canonical type, lower-48 coords,
   real URL, ISO date, confirmation language).
-- If the model errors (e.g. API credit exhausted), events.json is left untouched
-  and the job FAILS LOUDLY (red run + ::error:: annotation) instead of writing a
-  green "Added 0" that hides the failure.
+- If the California API fails, it is skipped with a ::warning:: and the run
+  continues. If the model errors (e.g. API credit exhausted), events.json is
+  left unchanged and the job FAILS LOUDLY (red run + ::error:: annotation).
 - Writes LATEST_RUN.md on each successful run for a plain-English review trail.
 """
 
-import json, os, re, sys, datetime
+import json, os, re, sys, datetime, urllib.request, urllib.parse
 from anthropic import Anthropic
 
 EVENTS_FILE  = "events.json"
@@ -46,9 +54,77 @@ def norm_key(e):
     return f"{e.get('state','')}|{name}|{e.get('date','')}"
 
 
+def wb_type(name):
+    u = str(name).upper()
+    if "CANAL" in u: return "canal"
+    if "RIVER" in u or "CREEK" in u: return "river"
+    if "POND" in u: return "pond"
+    if "MARSH" in u: return "other"
+    if "RESERVOIR" in u or "DAM" in u: return "reservoir"
+    return "lake"
+
+
+# ----------------------------------------------------------------------------
+# Source 1: California direct API (data.ca.gov Freshwater HAB dataset)
+# ----------------------------------------------------------------------------
+CA_RESOURCE = "67648948-034f-4882-bbc0-c07c7d38daf9"
+CA_URL      = "https://mywaterquality.ca.gov/habs/resources/reports-map/"
+# Advisory_Recommended value -> map severity. These are the confirmed tiers;
+# "None", "General awareness", "Visual observation" etc. are intentionally excluded.
+CA_ADVISORY_SEV = {
+    "Caution": "advisory",
+    "Warning": "warning",
+    "Danger":  "danger",
+    "Algal mat alert sign": "advisory",
+}
+
+
+def pull_california():
+    """Return this year's confirmed California advisories from the state API."""
+    year = datetime.datetime.utcnow().year
+    levels = "','".join(CA_ADVISORY_SEV.keys())
+    sql = (f'SELECT "Case_Water_Body_Name","County","Bloom_Latitude","Bloom_Longitude",'
+           f'"Advisory_Recommended","Case_Start_Date" FROM "{CA_RESOURCE}" '
+           f'WHERE "Case_Year" = \'{year}\' AND "Advisory_Recommended" IN (\'{levels}\')')
+    url = "https://data.ca.gov/api/3/action/datastore_search_sql?sql=" + urllib.parse.quote(sql)
+    req = urllib.request.Request(url, headers={"User-Agent": "hydralife-hab-comb"})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        data = json.load(resp)
+    recs = (data.get("result") or {}).get("records") or []
+    out = []
+    for r in recs:
+        wb   = (r.get("Case_Water_Body_Name") or "").strip()
+        lat  = r.get("Bloom_Latitude"); lng = r.get("Bloom_Longitude")
+        date = (r.get("Case_Start_Date") or "")[:10]
+        adv  = r.get("Advisory_Recommended")
+        if not (wb and lat and lng and date.startswith(str(year))):
+            continue
+        try:
+            lat = float(lat); lng = float(lng)
+        except (TypeError, ValueError):
+            continue
+        county = (r.get("County") or "").strip()
+        sev = CA_ADVISORY_SEV.get(adv, "advisory")
+        if adv == "Algal mat alert sign":
+            quote = (f"California's HAB program posted an algal mat alert at {wb} ({county} County) on {date}; "
+                     f"avoid contact with visible cyanobacteria mats and scum, and keep children and pets away.")
+        else:
+            quote = (f"California's State Water Board HAB program posted a {adv} advisory at {wb} ({county} County) "
+                     f"based on a bloom reported {date}; avoid contact with the water where scum is present.")
+        out.append({"date": date, "state": "CA", "county": county, "name": wb,
+                    "type": wb_type(wb), "sev": sev, "algae": "cyanobacteria",
+                    "lat": round(lat, 4), "lng": round(lng, 4),
+                    "url": CA_URL, "source_type": "state_agency", "quote": quote})
+    return out
+
+
+# ----------------------------------------------------------------------------
+# Source 2: the comb (Claude + web search) for every other state
+# ----------------------------------------------------------------------------
 PROMPT = """You are the HAB Discovery Agent for Hydralife Solutions. Your job is to
 find NEW, AGENCY-CONFIRMED harmful algae bloom (HAB) events in the United States
 lower 48 states from roughly the last {days} days, and return them as clean JSON.
+California is already covered by a separate data feed, so you may skip California.
 
 WHAT COUNTS (confirmed only):
 A HAB for this map is a bloom of cyanobacteria / blue-green algae, red tide
@@ -71,7 +147,6 @@ authoritative state HAB dashboards and advisory pages by name, plus their host a
 - Nevada: Nevada Office of State Epidemiology HAB page (nvose.org)
 - Kansas: KDHE / KDWP blue-green algae public health advisory list
 - Florida: county Department of Health blue-green algae alerts; FWC red tide status
-- California: CCHAB network and State Water Board (waterboards.ca.gov) bloom reports
 - New York: DEC NYHABS notifications list
 - Ohio, Michigan, Wisconsin, Minnesota, Indiana: state EPA / DNR / health beach and HAB dashboards
 - Oregon, Utah, Washington, Arizona, Colorado, Nebraska: state HAB advisory pages
@@ -103,7 +178,7 @@ For EACH new confirmed event, output a JSON object with EXACTLY these fields:
 RULES:
 - Do NOT fabricate. If you cannot find a real source URL, do not include the event.
 - Include an event even if the advisory was later LIFTED, downgraded, or the bloom
-  has dissipated, AS LONG AS it was an agency-confirmed HAB at some point in 2026.
+  has dissipated, AS LONG AS it was an agency-confirmed HAB at some point in {year}.
   Use the original issue or sample date. But NEVER include an event that was only
   ever a possible / suspected / unconfirmed report.
 - Coordinates must fall inside the lower 48 (lat 24-50, lng -125 to -66).
@@ -137,15 +212,13 @@ def extract_json_array(text):
 
 REQUIRED = ["id","date","state","county","name","type","sev","algae","lat","lng","url","source_type","quote"]
 
-# Language that indicates an agency actually confirmed the bloom.
 CONFIRMED_RE = re.compile(
     r"confirm|µg/?l|ug/?l|ppb|cells?/ml|cell count|microcystin|anatoxin|"
     r"cylindrospermopsin|saxitoxin|toxin.{0,20}(detect|exceed|measur)|"
     r"(detect|exceed|measur).{0,20}(microcyst|anatox|cylindro|saxitox|toxin)|"
     r"do not (swim|contact|use)|avoid (all )?(water )?contact|"
-    r"health (alert|advisory) (issued|posted)|closure|beach closed", re.I)
+    r"health (alert|advisory) (issued|posted)|alert (posted|sign)|closure|beach closed", re.I)
 
-# Language that means the event is NOT confirmed and should be excluded.
 UNCONFIRMED_RE = re.compile(
     r"\bpossible\b|report of possible|public (bloom )?report|reported by the public|"
     r"\bsuspected\b|under investigation|\bpending\b|awaiting results|\bat risk\b|"
@@ -153,7 +226,6 @@ UNCONFIRMED_RE = re.compile(
 
 
 def looks_confirmed(e):
-    """True only if the event reads as an agency-confirmed HAB."""
     q  = str(e.get("quote", ""))
     st = str(e.get("source_type", ""))
     strong = bool(CONFIRMED_RE.search(q))
@@ -191,23 +263,31 @@ def main():
     ids  = {e.get("id", "") for e in events}
     keys = {norm_key(e) for e in events}
 
+    # Source 1: California API (best-effort; never blocks the run).
+    try:
+        california = pull_california()
+        for i, e in enumerate(california):
+            e["id"] = f"{e['date'].replace('-','')}-CA-{900 + i:03d}"
+        print(f"California API returned {len(california)} confirmed advisories")
+    except Exception as ex:
+        print(f"::warning::California API pull failed (skipped this run): {ex}")
+        california = []
+
+    # Source 2: the comb (model + web search). A hard failure fails the whole run.
+    year = datetime.datetime.utcnow().year
     existing_lines = "\n".join(
         f"{e.get('state')} | {e.get('name')} | {e.get('date')}" for e in events
     )
-    prompt = PROMPT.format(days=LOOKBACK_DAYS, existing=existing_lines)
-
+    prompt = PROMPT.format(days=LOOKBACK_DAYS, year=year, existing=existing_lines)
     try:
         text  = call_claude(prompt)
         found = extract_json_array(text)
     except Exception as ex:
-        # Fail loudly: leave events.json + LATEST_RUN.md untouched and make the
-        # GitHub Actions run go RED so a dead run can't masquerade as success.
-        msg = str(ex)
-        print(f"::error::HAB comb failed, events.json left unchanged: {msg}")
+        print(f"::error::HAB comb failed, events.json left unchanged: {ex}")
         sys.exit(1)
 
-    added, skipped = [], []
-    for e in found:
+    added, skipped, ca_added = [], [], 0
+    for e in california + found:
         if not valid_event(e):
             skipped.append((e.get("name", "?"), "failed validation / not confirmed"))
             continue
@@ -217,6 +297,8 @@ def main():
         events.append(e)
         ids.add(e["id"]); keys.add(norm_key(e))
         added.append(e)
+        if e.get("state") == "CA":
+            ca_added += 1
 
     if added:
         with open(EVENTS_FILE, "w", encoding="utf-8") as f:
@@ -225,14 +307,14 @@ def main():
     with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
         f.write(f"# HAB comb run {datetime.datetime.utcnow():%Y-%m-%d %H:%M} UTC\n\n")
         f.write(f"Total events on the map: {len(events)}\n\n")
-        f.write(f"## Added {len(added)} (confirmed only)\n")
+        f.write(f"## Added {len(added)} (confirmed only; {ca_added} from the California API)\n")
         for e in added:
             f.write(f"- {e['state']} - {e['name']} ({e['date']}, {e['sev']}) - {e['url']}\n")
         f.write(f"\n## Skipped {len(skipped)}\n")
         for n, why in skipped:
             f.write(f"- {n}: {why}\n")
 
-    print(f"Added {len(added)}, skipped {len(skipped)}, total now {len(events)}")
+    print(f"Added {len(added)} ({ca_added} CA), skipped {len(skipped)}, total now {len(events)}")
 
 
 if __name__ == "__main__":
