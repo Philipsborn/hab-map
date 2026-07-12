@@ -855,6 +855,21 @@
   "quote": "Blue-Green Algae Health Caution for Polk County Tiger Lake-NE Shore, Reedy Lake-S Shore, and Lake Marion S. Boat Ramp issued 04-24-26."
  },
  {
+  "id": "20260427-WA-001",
+  "date": "2026-04-27",
+  "state": "WA",
+  "county": "Jefferson",
+  "name": "Anderson Lake",
+  "type": "lake",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 48.0189,
+  "lng": -122.8019,
+  "url": "https://www.nwtoxicalgae.org/",
+  "source_type": "state_agency",
+  "quote": "Anderson Lake 04/27/2026 Anatoxin-a 219.000 Above State Guideline Yes"
+ },
+ {
   "id": "20260428-CA-001",
   "date": "2026-04-28",
   "state": "CA",
@@ -1215,6 +1230,21 @@
   "quote": "USACE Staff posting Animal Safety Alert flyer from CDC in all bulletin boards, access points (beaches and boat ramps) in USACE managed campgrounds on May 12, 2026."
  },
  {
+  "id": "20260511-NV-001",
+  "date": "2026-05-11",
+  "state": "NV",
+  "county": "Lyon",
+  "name": "Lahontan Reservoir",
+  "type": "reservoir",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 39.3968,
+  "lng": -119.1867,
+  "url": "https://ndep.nv.gov/water/rivers-streams-lakes/water-quality-monitoring/harmful-algal-bloom-program",
+  "source_type": "state_agency",
+  "quote": "Lahontan Reservoir, Lyon, Advisory Date 5/11/2026, HAB WATCH"
+ },
+ {
   "id": "20260511-WA-001",
   "date": "2026-05-11",
   "state": "WA",
@@ -1573,6 +1603,21 @@
   "url": "https://ncdenr.maps.arcgis.com/apps/dashboards/7543be4dc8194e6e9c215079d976e716",
   "source_type": "state_agency",
   "quote": "Mecklenburg Storm Water Service staff responded to this report on 6/3/2026."
+ },
+ {
+  "id": "20260519-NV-001",
+  "date": "2026-05-19",
+  "state": "NV",
+  "county": "Mineral",
+  "name": "Walker Lake",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 38.6483,
+  "lng": -118.7551,
+  "url": "https://ndep.nv.gov/water/rivers-streams-lakes/water-quality-monitoring/harmful-algal-bloom-program",
+  "source_type": "state_agency",
+  "quote": "Walker Lake, Mineral, Advisory Date 5/19/2026, HAB WATCH"
  },
  {
   "id": "20260520-FL-001",
@@ -2113,6 +2158,21 @@
   "url": "https://dnr.mo.gov/water/alerts-hazards/harmful-algal-bloom-hab-reports-map",
   "source_type": "state_agency",
   "quote": "Cyanobacteria present. People, pets, and livestock should avoid contact with the water for at least 14 days after the bloom has dissipated."
+ },
+ {
+  "id": "20260527-NV-001",
+  "date": "2026-05-27",
+  "state": "NV",
+  "county": "Pershing",
+  "name": "Rye Patch Reservoir",
+  "type": "reservoir",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 40.5896,
+  "lng": -118.3164,
+  "url": "https://ndep.nv.gov/water/rivers-streams-lakes/water-quality-monitoring/harmful-algal-bloom-program",
+  "source_type": "state_agency",
+  "quote": "Rye Patch Reservoir, Pershing, Advisory Date 5/27/2026, HAB WATCH"
  },
  {
   "id": "20260528-MO-001",
@@ -3034,6 +3094,21 @@
   "date": "2026-06-11",
   "state": "NV",
   "county": "Clark",
+  "name": "Lake Mohave",
+  "type": "lake",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 35.6056,
+  "lng": -114.6562,
+  "url": "https://ndep.nv.gov/water/rivers-streams-lakes/water-quality-monitoring/harmful-algal-bloom-program",
+  "source_type": "state_agency",
+  "quote": "Nevada issued harmful algal bloom advisories on Lake Mohave in June 2026, including do-not-contact warnings at Placer Cove and Eagle Wash Cove; avoid water contact where a bloom is present."
+ },
+ {
+  "id": "20260611-NV-002",
+  "date": "2026-06-11",
+  "state": "NV",
+  "county": "Clark",
   "name": "Lake Mohave (Cottonwood Cove / Eagle Wash / Placer Cove)",
   "type": "reservoir",
   "sev": "danger",
@@ -3838,6 +3913,21 @@
   "url": "https://www.pa.gov/agencies/dep/programs-and-services/water/clean-water/habs",
   "source_type": "state_agency",
   "quote": "Pennsylvania's interagency HABs Task Force placed Struble Lake under a HAB Advisory (Yellow) based on sampling on 2026-06-22; use caution and avoid visible scum."
+ },
+ {
+  "id": "20260622-WA-001",
+  "date": "2026-06-22",
+  "state": "WA",
+  "county": "Klickitat",
+  "name": "Rowland Lake",
+  "type": "lake",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 45.7072,
+  "lng": -121.3781,
+  "url": "https://www.nwtoxicalgae.org/",
+  "source_type": "state_agency",
+  "quote": "Rowland Lake listed under 'Current lakes with values above guidelines'; 06/22/2026 Microcystin 9.500 Above State Guideline Yes"
  },
  {
   "id": "20260623-CA-001",
@@ -5265,6 +5355,51 @@
   "quote": "Protecting Florida Together: algae observed, cyanobacteria not dominant, no toxin detected (2026-06-29)."
  },
  {
+  "id": "20260629-ND-001",
+  "date": "2026-06-29",
+  "state": "ND",
+  "county": "Bowman",
+  "name": "Bowman-Haley Dam",
+  "type": "reservoir",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 45.9813,
+  "lng": -103.2542,
+  "url": "https://deq.nd.gov/WQ/3_Watershed_Mgmt/8_HABS/Habs.aspx",
+  "source_type": "state_agency",
+  "quote": "NDDEQ Warning (HABsListings): Bowman-Haley Dam, Bowman County, Date Posted 06/29/2026"
+ },
+ {
+  "id": "20260629-ND-002",
+  "date": "2026-06-29",
+  "state": "ND",
+  "county": "Renville",
+  "name": "Lake Darling",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 48.5876,
+  "lng": -101.6118,
+  "url": "https://deq.nd.gov/WQ/3_Watershed_Mgmt/8_HABS/Habs.aspx",
+  "source_type": "state_agency",
+  "quote": "NDDEQ Advisory (HABsListings): Lake Darling, Renville County, Date Posted 06/29/2026"
+ },
+ {
+  "id": "20260629-ND-003",
+  "date": "2026-06-29",
+  "state": "ND",
+  "county": "Steele",
+  "name": "South Golden Lake",
+  "type": "lake",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 47.5672,
+  "lng": -97.6382,
+  "url": "https://deq.nd.gov/WQ/3_Watershed_Mgmt/8_HABS/Habs.aspx",
+  "source_type": "state_agency",
+  "quote": "NDDEQ Warning (HABsListings): South Golden Lake, Steele County, Date Posted 06/29/2026"
+ },
+ {
   "id": "20260629-NJ-001",
   "date": "2026-06-29",
   "state": "NJ",
@@ -5670,6 +5805,21 @@
   "quote": "Vermont's Cyanobacteria Tracker rated Lake Champlain (St. Albans) at Low Alert (use caution) based on a shoreline report on 2026-06-29; avoid water that looks like spilled paint, pea soup, or has surface scums."
  },
  {
+  "id": "20260629-WA-001",
+  "date": "2026-06-29",
+  "state": "WA",
+  "county": "King",
+  "name": "Lake Marcel",
+  "type": "lake",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 47.6954,
+  "lng": -121.9177,
+  "url": "https://www.nwtoxicalgae.org/",
+  "source_type": "state_agency",
+  "quote": "Lake Marcel 06/29/2026 Microcystin 60.800 Above State Guideline Yes"
+ },
+ {
   "id": "20260630-MI-001",
   "date": "2026-06-30",
   "state": "MI",
@@ -5908,6 +6058,21 @@
   "url": "https://www.deq.nc.gov/about/divisions/water-resources/water-sciences-section/algal-blooms",
   "source_type": "state_agency",
   "quote": "NC DEQ Division of Water Resources responded to a reported algal bloom on the Pamlico River Near Nc Estuarium on 2026-07-01 and collected samples for analysis."
+ },
+ {
+  "id": "20260701-ND-001",
+  "date": "2026-07-01",
+  "state": "ND",
+  "county": "Eddy",
+  "name": "Warsing Dam",
+  "type": "reservoir",
+  "sev": "warning",
+  "algae": "cyanobacteria",
+  "lat": 47.8371,
+  "lng": -99.1192,
+  "url": "https://deq.nd.gov/WQ/3_Watershed_Mgmt/8_HABS/Habs.aspx",
+  "source_type": "state_agency",
+  "quote": "NDDEQ Warning (HABsListings): Warsing Dam, Eddy County, Date Posted 07/01/2026"
  },
  {
   "id": "20260701-NJ-001",
