@@ -1,24 +1,26 @@
-# HAB comb run 2026-07-13 14:37 UTC
+# HAB comb run 2026-07-20 14:09 UTC
 
-Total events on the map: 548
+Total events on the map: 550
 
-## Added 10 (confirmed only; 10 from the California API)
-- CA - San Antonio River (2026-07-03, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - Lake Ralphine (2026-05-27, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - Tule Lake National Wildlife Refuge (2026-06-10, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - Whelan Lake (2026-05-19, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - H.V. Eastman Lake (2026-03-30, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - Ringstrom Unit Marsh (2026-05-12, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - Muskgrave Creek (2026-05-14, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - Crabtree Creek (2026-06-04, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - Stone Creek (2026-06-19, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - Middle Fork Feather River (2026-06-25, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
+## Added 2 (confirmed only; 2 from the California API)
+- CA - Navarro River (2026-07-16, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
+- CA - Lake Hacienda (2026-07-17, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
 
-## Skipped 7
+## Skipped 17
+- San Antonio River: duplicate
+- Skinner Creek: duplicate
+- Ringstrom Unit Marsh: duplicate
+- Lake Ralphine: duplicate
+- Tule Lake National Wildlife Refuge: duplicate
 - Central Branch Kern Island Canal: duplicate
+- H.V. Eastman Lake: duplicate
+- Muskgrave Creek: duplicate
 - Lake McSwain: duplicate
+- Whelan Lake: duplicate
 - Willow Glen Ponds: duplicate
+- Crabtree Creek: duplicate
 - Crab Creek: duplicate
+- Stone Creek: duplicate
+- Middle Fork Feather River: duplicate
 - Civic Center Park pond: duplicate
 - Little Sur River: duplicate
-- Skinner Creek: duplicate

@@ -8218,5 +8218,35 @@
   "source_type": "state_agency",
   "quote": "California's HAB program posted an algal mat alert at Middle Fork Feather River (Plumas County) on 2026-06-25; avoid contact with visible cyanobacteria mats and scum, and keep children and pets away.",
   "id": "20260625-CA-913"
+ },
+ {
+  "date": "2026-07-16",
+  "state": "CA",
+  "county": "Mendocino",
+  "name": "Navarro River",
+  "type": "river",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 39.0745,
+  "lng": -123.4621,
+  "url": "https://mywaterquality.ca.gov/habs/resources/reports-map/",
+  "source_type": "state_agency",
+  "quote": "California's HAB program posted an algal mat alert at Navarro River (Mendocino County) on 2026-07-16; avoid contact with visible cyanobacteria mats and scum, and keep children and pets away.",
+  "id": "20260716-CA-905"
+ },
+ {
+  "date": "2026-07-17",
+  "state": "CA",
+  "county": "Kern",
+  "name": "Lake Hacienda",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 35.4116,
+  "lng": -118.8417,
+  "url": "https://mywaterquality.ca.gov/habs/resources/reports-map/",
+  "source_type": "state_agency",
+  "quote": "California's State Water Board HAB program posted a Caution advisory at Lake Hacienda (Kern County) based on a bloom reported 2026-07-17; avoid contact with the water where scum is present.",
+  "id": "20260717-CA-918"
  }
 ]
