@@ -1,44 +1,46 @@
-# HAB comb run 2026-07-27 14:39 UTC
+# HAB comb run 2026-08-03 14:43 UTC
 
-Total events on the map: 568
+Total events on the map: 584
 
-## Added 18 (confirmed only; 3 from the California API)
-- CA - Martinez Shoreline (2026-07-17, danger) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - White River (2026-07-23, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - Eel River (2026-07-24, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- KS - Lone Star Lake (2026-07-24, advisory) - https://www.kctv5.com/2026/07/24/lone-star-lake-added-blue-green-algae-watch-advisory-by-kansas-officials/
-- KS - Gardner City Lake (2026-07-24, advisory) - https://www.kctv5.com/2026/07/24/lone-star-lake-added-blue-green-algae-watch-advisory-by-kansas-officials/
-- KS - Kill Creek Park Lake (2026-07-24, advisory) - https://www.kctv5.com/2026/07/24/lone-star-lake-added-blue-green-algae-watch-advisory-by-kansas-officials/
-- MI - Center Lake (2026-07-26, warning) - https://www.cbsnews.com/detroit/news/harmful-algal-bloom-center-lake-michigan/
-- UT - Utah Lake - Lincoln Marina Beach (2026-07-13, warning) - https://health.utahcounty.gov/2026/07/13/harmful-algal-bloom-hab-warning-advisory/
-- UT - Utah Lake - Saratoga Springs Marina (2026-07-09, warning) - https://www.abc4.com/news/wasatch-front/harmful-algae-blooms-utah-lake/
-- UT - Utah Lake - American Fork Marina (2026-07-13, warning) - https://health.utahcounty.gov/2026/07/13/harmful-algal-bloom-hab-warning-advisory/
-- UT - Utah Lake - Lindon Beach Marina (2026-07-13, warning) - https://health.utahcounty.gov/2026/07/13/harmful-algal-bloom-hab-warning-advisory/
-- UT - Utah Lake - Lindon Marina (2026-07-13, warning) - https://health.utahcounty.gov/2026/07/13/harmful-algal-bloom-hab-warning-advisory/
-- UT - Mantua Reservoir (2026-07-08, warning) - https://www.abc4.com/news/health/harmful-algae-bloom-mantua-reservoir/
-- MT - Hebgen Reservoir - Corey Springs area (2026-07-24, warning) - https://www.montanaoutdoor.com/2026/07/harmful-algal-blooms-confirmed-on-hebgen-reservoir-advisory-issued/
-- MT - Cooney Reservoir (2026-07-24, warning) - https://www.montanarightnow.com/montana/harmful-algal-blooms-reported-at-montana-lakes-and-reservoirs/article_14b0944b-1447-4fa1-b6b3-4720c42848e6.html
-- MT - Tongue River Reservoir (2026-07-24, warning) - https://www.montanarightnow.com/montana/harmful-algal-blooms-reported-at-montana-lakes-and-reservoirs/article_14b0944b-1447-4fa1-b6b3-4720c42848e6.html
-- MT - Hauser Reservoir (2026-07-24, warning) - https://www.montanarightnow.com/montana/harmful-algal-blooms-reported-at-montana-lakes-and-reservoirs/article_14b0944b-1447-4fa1-b6b3-4720c42848e6.html
-- MT - Elk Grove Pond (2026-07-24, warning) - https://www.montanarightnow.com/montana/harmful-algal-blooms-reported-at-montana-lakes-and-reservoirs/article_14b0944b-1447-4fa1-b6b3-4720c42848e6.html
+## Added 16 (confirmed only; 3 from the California API)
+- CA - Hume Lake (2026-07-17, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
+- CA - Indian Creek (2026-07-30, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
+- CA - West Valley Reservoir (2026-07-31, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
+- FL - Lake Okeechobee - PALMOUT3 (2026-07-08, advisory) - https://palmbeach.floridahealth.gov/2026/07/10/doh-palm-beach-cautions-about-blue-green-algae-at-lake-okeechobee-53/
+- OR - Prineville Reservoir (2026-07-27, advisory) - https://centraloregonian.com/2026/07/28/prineville-reservoir-under-recreational-use-advisory/
+- OR - Willamette River - Ross Island Lagoon (2026-07-28, warning) - https://coastalscience.noaa.gov/news/harmful-cyanobacteria-blooms-in-lower-willamette-river/
+- UT - Deer Creek Reservoir - East Wallsburg Bay (2026-07-24, warning) - https://www.parkrecord.com/2026/07/24/harmful-algal-bloom-warning-advisory-in-effect-at-east-wallsburg-bay-deer-creek-reservoir/
+- NE - Maple Creek Recreation Area Lake (2026-07-17, closure) - https://www.1011now.com/2026/07/17/toxic-blue-green-algae-prompts-health-alerts-three-nebraska-recreation-areas/
+- MA - Charles River (Needham to West Roxbury) (2026-07-21, advisory) - https://www.boston.gov/news/health-advisory-officials-investigating-charles-river-cyanobacteria-algae-bloom
+- ND - Devils Lake (2026-07-16, advisory) - https://northdakotamonitor.com/briefs/beware-of-dangerous-algae-on-north-dakota-lakes-officials-say/
+- ND - Lake Brekken (2026-07-16, advisory) - https://northdakotamonitor.com/briefs/beware-of-dangerous-algae-on-north-dakota-lakes-officials-say/
+- ND - Lake Tschida (2026-07-31, advisory) - https://news.prairiepublic.org/local-news/2026-07-31/blue-green-algae-advisory-issued-for-lake-tschida
+- MT - Hebgen Reservoir - Rainbow Point area (2026-07-30, closure) - https://billingsgazette.com/news/community/article_6f25170e-f68e-571d-8e1f-ed8b39575dbc.html
+- NY - Chautauqua Lake - Children's Beach (Chautauqua Institution) (2026-07-08, closure) - https://www.post-journal.com/news/local-news/2026/07/algal-blooms-close-four-county-beaches/
+- NY - Chautauqua Lake - College/Pier Beach (Chautauqua Institution) (2026-07-08, closure) - https://www.post-journal.com/news/local-news/2026/07/algal-blooms-close-four-county-beaches/
+- NY - Chautauqua Lake - Heinz Beach (Chautauqua Institution) (2026-07-08, closure) - https://www.post-journal.com/news/local-news/2026/07/algal-blooms-close-four-county-beaches/
 
-## Skipped 19
-- Little Sur River: duplicate
-- Skinner Creek: duplicate
-- Whelan Lake: duplicate
+## Skipped 23
+- Stone Creek: duplicate
+- Lake McSwain: duplicate
 - Lake Ralphine: duplicate
 - Tule Lake National Wildlife Refuge: duplicate
-- Navarro River: duplicate
+- Whelan Lake: duplicate
 - Central Branch Kern Island Canal: duplicate
 - H.V. Eastman Lake: duplicate
 - Ringstrom Unit Marsh: duplicate
 - Muskgrave Creek: duplicate
-- Willow Glen Ponds: duplicate
-- Crabtree Creek: duplicate
-- Lake McSwain: duplicate
-- Crab Creek: duplicate
-- Stone Creek: duplicate
 - Middle Fork Feather River: duplicate
+- Willow Glen Ponds: duplicate
 - San Antonio River: duplicate
+- Crabtree Creek: duplicate
+- Crab Creek: duplicate
 - Civic Center Park pond: duplicate
+- Little Sur River: duplicate
+- Skinner Creek: duplicate
 - Lake Hacienda: duplicate
+- Martinez Shoreline: duplicate
+- White River: duplicate
+- Eel River: duplicate
+- Navarro River: duplicate
+- Chautauqua Lake - Long Point State Park Beach: duplicate
