@@ -1,22 +1,31 @@
-# HAB comb run 2026-09-14 17:52 UTC
+# HAB comb run 2026-09-21 17:59 UTC
 
-Total events on the map: 637
+Total events on the map: 658
 
-## Added 9 (confirmed only; 3 from the California API)
-- CA - Kidder Creek (2026-08-03, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - Ellis Lake (2026-09-04, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- CA - Lake Almanor (2026-06-16, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- TX - Galveston Island / Bolivar Peninsula coastal waters (2026-09-14, warning) - https://www.fox26houston.com/news/red-tide-detected-galveston-bolivar-peninsula-fish-kills-respiratory-symptoms-reported
-- ID - Grasmere Reservoir (2026-08-23, advisory) - https://idahocapitalsun.com/2026/08/23/harmful-algal-bloom-advisory-issued-at-southwest-idaho-reservoirs-2/
-- ID - CJ Strike Reservoir - Bruneau Arm (2026-08-23, advisory) - https://idahocapitalsun.com/2026/08/23/harmful-algal-bloom-advisory-issued-at-southwest-idaho-reservoirs-2/
-- MA - Charles River Lower Basin (downstream of BU) (2026-08-27, advisory) - https://www.boston.gov/news/health-advisory-expanded-cyanobacteria-algae-bloom-advisory-charles-river-lower-basin
-- MI - Gun Lake (2026-07-09, advisory) - https://barryeatonhealth.org/habgunlake2026/
-- KS - Warnock Lake (2026-09-12, warning) - https://www.herecolumbia.com/2026/09/12/kansas-blue-green-algae-advisories-lakes-sept-12-2026/
+## Added 21 (confirmed only; 3 from the California API)
+- CA - Lake Zyac (2026-09-15, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
+- CA - North Yuba River (2026-09-17, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
+- CA - Battle Creek (2026-09-17, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
+- FL - Lake Okeechobee - NES135 (J&S Fish Camp) (2026-09-15, advisory) - https://cbs12.com/news/health/martin-county-health-officials-warn-of-harmful-blue-green-algae-near-lake-okeechobee-toxins-water-samples-drink-swim-wade-contact-water-blooms-caution-health-alert
+- FL - Lake Okeechobee - Glades County (2026-09-01, advisory) - https://lakeonews.com/glades-county/stories/doh-glades-issues-blue-green-algae-health-alert-for-lake-okeechobee,88363
+- FL - Lake Howell (2026-09-11, advisory) - https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/aquatic-toxins/where-are-habs/
+- FL - Lake Okeechobee - Hendry County (2026-09-09, advisory) - https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/aquatic-toxins/where-are-habs/
+- FL - Doctors Lake - Center (2026-09-09, advisory) - https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/aquatic-toxins/where-are-habs/
+- FL - St. Johns River - Fort Picolata (2026-09-08, advisory) - https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/aquatic-toxins/where-are-habs/
+- FL - St. Johns River - Colee Cove (2026-09-08, advisory) - https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/aquatic-toxins/where-are-habs/
+- FL - Doctors Lake - Salt Myrtle Lane (2026-09-04, advisory) - https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/aquatic-toxins/where-are-habs/
+- NE - Big Indian Lake (2026-09-18, advisory) - https://www.wowt.com/2026/09/18/nebraska-dhhs-extends-health-alert-toxic-algae-lakes-gage-jefferson-counties/
+- NE - Cub Creek Lake (2026-09-18, advisory) - https://www.wowt.com/2026/09/18/nebraska-dhhs-extends-health-alert-toxic-algae-lakes-gage-jefferson-counties/
+- ND - Epping-Springbrook Dam (2026-09-02, advisory) - https://www.valleynewslive.com/2026/09/11/north-dakota-adds-four-more-waterbodies-harmful-algal-bloom-list/
+- ND - Blacktail Dam (2026-09-08, advisory) - https://www.valleynewslive.com/2026/09/11/north-dakota-adds-four-more-waterbodies-harmful-algal-bloom-list/
+- ND - Lake Darling (2026-09-02, warning) - https://www.valleynewslive.com/2026/09/11/north-dakota-adds-four-more-waterbodies-harmful-algal-bloom-list/
+- ND - Buffalo Lodge Lake (2026-09-02, warning) - https://www.valleynewslive.com/2026/09/11/north-dakota-adds-four-more-waterbodies-harmful-algal-bloom-list/
+- ND - Horsehead Lake (2026-09-17, advisory) - https://www.valleynewslive.com/2026/09/17/north-dakota-adds-three-more-waterbodies-harmful-algal-bloom-list-total-reaches-20/
+- ND - Larimore Dam (2026-09-17, advisory) - https://www.valleynewslive.com/2026/09/17/north-dakota-adds-three-more-waterbodies-harmful-algal-bloom-list-total-reaches-20/
+- OR - Thief Valley Reservoir (2026-09-11, advisory) - https://flashalert.net/id/OregonHealthAuthority/190904
+- WA - Seabreeze Lake (2026-09-17, advisory) - https://surfsidewa.com/2026/09/17/toxic-algae-detected-in-seabreeze-lake-residents-urged-to-stay-out-of-the-water/
 
-## Skipped 44
-- Stone Creek: duplicate
-- Skinner Creek: duplicate
-- Lake McSwain: duplicate
+## Skipped 45
 - Salmon Creek: duplicate
 - Lake Ralphine: duplicate
 - Scott River: duplicate
@@ -29,23 +38,27 @@ Total events on the map: 637
 - Kit Carson Park Eagle Scout Lake: duplicate
 - Willow Glen Ponds: duplicate
 - Crabtree Creek: duplicate
+- Lake McSwain: duplicate
 - Crab Creek: duplicate
+- Stone Creek: duplicate
 - Middle Fork Feather River: duplicate
-- Little Sur River: duplicate
-- Civic Center Park pond: duplicate
 - San Antonio River: duplicate
+- Civic Center Park pond: duplicate
+- Little Sur River: duplicate
+- Skinner Creek: duplicate
 - Lake Hacienda: duplicate
 - Martinez Shoreline: duplicate
 - White River: duplicate
 - Navarro River: duplicate
 - Hume Lake: duplicate
 - Indian Creek: duplicate
+- Cold Stream: duplicate
 - West Valley Reservoir: duplicate
 - Lake Pillsbury: duplicate
 - Lake Combie: duplicate
 - Sagehen Creek: duplicate
-- Cold Stream: duplicate
 - Bell Canyon Reservoir: duplicate
+- Kidder Creek: duplicate
 - South Fork Eel River: duplicate
 - Tuolumne River: duplicate
 - Putah Creek: duplicate
@@ -54,7 +67,7 @@ Total events on the map: 637
 - East Creek: duplicate
 - Twelvemile Creek: duplicate
 - Mill Creek: duplicate
-- Eel River: duplicate
+- Ellis Lake: duplicate
 - Van Duzen River: duplicate
 - Mad River: duplicate
-- Wall Lake: duplicate
+- Lake Almanor: duplicate
