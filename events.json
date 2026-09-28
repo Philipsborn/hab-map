@@ -9868,5 +9868,20 @@
   "url": "https://surfsidewa.com/2026/09/17/toxic-algae-detected-in-seabreeze-lake-residents-urged-to-stay-out-of-the-water/",
   "source_type": "local_news",
   "quote": "Toxic algae has been detected in Seabreeze Lake. Washington residents are urged to stay out of the water. Harmful algal blooms are often caused by cyanobacteria which can produce toxins known as cyanotoxins."
+ },
+ {
+  "date": "2026-09-22",
+  "state": "CA",
+  "county": "Nevada",
+  "name": "Lake of the Pines",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 39.0367,
+  "lng": -121.0627,
+  "url": "https://mywaterquality.ca.gov/habs/resources/reports-map/",
+  "source_type": "state_agency",
+  "quote": "California's State Water Board HAB program posted a Caution advisory at Lake of the Pines (Nevada County) based on a bloom reported 2026-09-22; avoid contact with the water where scum is present.",
+  "id": "20260922-CA-947"
  }
 ]
