@@ -1,11 +1,11 @@
-# HAB comb run 2026-10-12 21:01 UTC
+# HAB comb run 2026-10-19 18:27 UTC
 
-Total events on the map: 666
+Total events on the map: 667
 
-## Added 0 (confirmed only; 0 from the California API)
+## Added 1 (confirmed only; 0 from the California API)
+- WA - Bay Lake (2026-10-16, advisory) - https://tpchd.org/news/we-issued-a-toxic-algae-caution-advisory-for-bay-lake/
 
-## Skipped 50
-- Lake of the Pines: duplicate
+## Skipped 49
 - Salmon Creek: duplicate
 - Lake Ralphine: duplicate
 - Scott River: duplicate
@@ -19,8 +19,8 @@ Total events on the map: 666
 - Willow Glen Ponds: duplicate
 - Crabtree Creek: duplicate
 - Lake McSwain: duplicate
-- Crab Creek: duplicate
 - Stone Creek: duplicate
+- Crab Creek: duplicate
 - Middle Fork Feather River: duplicate
 - Civic Center Park pond: duplicate
 - San Antonio River: duplicate
@@ -30,7 +30,6 @@ Total events on the map: 666
 - Martinez Shoreline: duplicate
 - White River: duplicate
 - Navarro River: duplicate
-- Hume Lake: duplicate
 - Indian Creek: duplicate
 - West Valley Reservoir: duplicate
 - Lake Pillsbury: duplicate
@@ -54,4 +53,5 @@ Total events on the map: 666
 - Lake Zyac: duplicate
 - North Yuba River: duplicate
 - Battle Creek: duplicate
+- Lake of the Pines: duplicate
 - Miramar: duplicate

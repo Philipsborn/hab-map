@@ -9988,5 +9988,20 @@
   "url": "https://www.thurstoncountywa.gov/departments/public-health-and-social-services/environmental-health/water/water-recreation",
   "source_type": "county_health",
   "quote": "Thurston County Public Health issued a health advisory for Lake Lawrence on September 22, 2026. Lab results from a sample taken from Lake Lawrence detected Microcystin toxin levels at 43.7 µg/L, which is above the state recreation guideline of 8.0 µg/L."
+ },
+ {
+  "id": "20261016-WA-001",
+  "date": "2026-10-16",
+  "state": "WA",
+  "county": "Pierce",
+  "name": "Bay Lake",
+  "type": "lake",
+  "sev": "advisory",
+  "algae": "cyanobacteria",
+  "lat": 47.2833,
+  "lng": -122.7333,
+  "url": "https://tpchd.org/news/we-issued-a-toxic-algae-caution-advisory-for-bay-lake/",
+  "source_type": "county_health",
+  "quote": "On Oct. 16, 2026, the Tacoma-Pierce County Health Department issued a toxic algae caution advisory for Bay Lake. The lake was sampled on Oct. 13, 2026 and results were received Oct. 15, 2026, confirming the presence of cyanobacteria that poses health concerns to people and pets."
  }
 ]
