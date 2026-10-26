@@ -1,11 +1,17 @@
-# HAB comb run 2026-10-19 18:27 UTC
+# HAB comb run 2026-10-26 18:23 UTC
 
 Total events on the map: 667
 
-## Added 1 (confirmed only; 0 from the California API)
-- WA - Bay Lake (2026-10-16, advisory) - https://tpchd.org/news/we-issued-a-toxic-algae-caution-advisory-for-bay-lake/
+## Added 0 (confirmed only; 0 from the California API)
 
 ## Skipped 49
+- Crab Creek: duplicate
+- San Antonio River: duplicate
+- Martinez Shoreline: duplicate
+- Skinner Creek: duplicate
+- Indian Creek: duplicate
+- West Valley Reservoir: duplicate
+- Stone Creek: duplicate
 - Salmon Creek: duplicate
 - Lake Ralphine: duplicate
 - Scott River: duplicate
@@ -19,19 +25,12 @@ Total events on the map: 667
 - Willow Glen Ponds: duplicate
 - Crabtree Creek: duplicate
 - Lake McSwain: duplicate
-- Stone Creek: duplicate
-- Crab Creek: duplicate
 - Middle Fork Feather River: duplicate
-- Civic Center Park pond: duplicate
-- San Antonio River: duplicate
 - Little Sur River: duplicate
-- Skinner Creek: duplicate
+- Civic Center Park pond: duplicate
 - Lake Hacienda: duplicate
-- Martinez Shoreline: duplicate
 - White River: duplicate
 - Navarro River: duplicate
-- Indian Creek: duplicate
-- West Valley Reservoir: duplicate
 - Lake Pillsbury: duplicate
 - Lake Combie: duplicate
 - Sagehen Creek: duplicate
