@@ -1,17 +1,25 @@
-# HAB comb run 2026-10-26 18:23 UTC
+# HAB comb run 2026-11-02 21:30 UTC
 
-Total events on the map: 667
+Total events on the map: 681
 
-## Added 0 (confirmed only; 0 from the California API)
+## Added 14 (confirmed only; 1 from the California API)
+- CA - Dry Creek (2026-10-27, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
+- RI - Lake Washington (2026-10-09, closure) - https://dem.ri.gov/press-releases/ridoh-and-dem-recommend-avoiding-contact-lake-washington
+- KY - Old Springfield Reservoir (2026-10-26, advisory) - https://www.einpresswire.com/article/952954604/harmful-algal-bloom-confirmed-on-old-springfield-reservoir
+- FL - Lake Okeechobee (2026-10-21, warning) - https://lakeonews.com/stories/doh-hendry-issues-blue-green-algae-health-alert-for-lake-okeechobee,88974
+- FL - Lake Howell (2026-10-30, warning) - https://www.wdbo.com/news/local/blue-green-algae-alert-issued-lake-howell-by-department-health/ST766UJZG5F3DIS2JRKV5WCUNI/
+- FL - Lake Thonotosassa (2026-10-16, warning) - https://floridapoisoncontrol.org/doh-hillsborough-issues-blue-green-algae-health-alert-for-lake-thonotosassa-7/
+- KS - Butler State Fishing Lake (2026-10-16, warning) - https://www.ksn.com/news/health/kansas-algae-bloom-warnings/
+- KS - Lake Scott (2026-10-09, warning) - https://www.kdhe.ks.gov/777/Harmful-Algal-Blooms
+- KS - Frisco Lake (2026-10-09, warning) - https://www.kdhe.ks.gov/777/Harmful-Algal-Blooms
+- KS - Marion County Lake (2026-10-09, warning) - https://www.kdhe.ks.gov/777/Harmful-Algal-Blooms
+- KS - Elkhorn Lake (2026-10-09, advisory) - https://www.kdhe.ks.gov/777/Harmful-Algal-Blooms
+- KS - Ottawa State Fishing Lake (2026-10-09, advisory) - https://www.kdhe.ks.gov/777/Harmful-Algal-Blooms
+- UT - Rockport Reservoir (2026-10-21, warning) - https://townlift.com/2026/10/harmful-algal-bloom-persists-at-rockport-reservoir-into-late-october/
+- WA - Pattison Lake (2026-10-16, warning) - https://www.thurstoncountywa.gov/news/toxic-algae-health-advisory-effect-pattison-lake-3
 
-## Skipped 49
-- Crab Creek: duplicate
-- San Antonio River: duplicate
-- Martinez Shoreline: duplicate
-- Skinner Creek: duplicate
-- Indian Creek: duplicate
-- West Valley Reservoir: duplicate
-- Stone Creek: duplicate
+## Skipped 50
+- Lake of the Pines: duplicate
 - Salmon Creek: duplicate
 - Lake Ralphine: duplicate
 - Scott River: duplicate
@@ -25,12 +33,19 @@ Total events on the map: 667
 - Willow Glen Ponds: duplicate
 - Crabtree Creek: duplicate
 - Lake McSwain: duplicate
+- Stone Creek: duplicate
+- Crab Creek: duplicate
 - Middle Fork Feather River: duplicate
-- Little Sur River: duplicate
 - Civic Center Park pond: duplicate
+- San Antonio River: duplicate
+- Little Sur River: duplicate
+- Skinner Creek: duplicate
 - Lake Hacienda: duplicate
+- Martinez Shoreline: duplicate
 - White River: duplicate
 - Navarro River: duplicate
+- Indian Creek: duplicate
+- West Valley Reservoir: duplicate
 - Lake Pillsbury: duplicate
 - Lake Combie: duplicate
 - Sagehen Creek: duplicate
@@ -52,5 +67,5 @@ Total events on the map: 667
 - Lake Zyac: duplicate
 - North Yuba River: duplicate
 - Battle Creek: duplicate
-- Lake of the Pines: duplicate
 - Miramar: duplicate
+- Bay Lake: duplicate
