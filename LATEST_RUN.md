@@ -1,25 +1,23 @@
-# HAB comb run 2026-11-02 21:30 UTC
+# HAB comb run 2026-11-09 22:01 UTC
 
-Total events on the map: 681
+Total events on the map: 688
 
-## Added 14 (confirmed only; 1 from the California API)
-- CA - Dry Creek (2026-10-27, advisory) - https://mywaterquality.ca.gov/habs/resources/reports-map/
-- RI - Lake Washington (2026-10-09, closure) - https://dem.ri.gov/press-releases/ridoh-and-dem-recommend-avoiding-contact-lake-washington
-- KY - Old Springfield Reservoir (2026-10-26, advisory) - https://www.einpresswire.com/article/952954604/harmful-algal-bloom-confirmed-on-old-springfield-reservoir
-- FL - Lake Okeechobee (2026-10-21, warning) - https://lakeonews.com/stories/doh-hendry-issues-blue-green-algae-health-alert-for-lake-okeechobee,88974
-- FL - Lake Howell (2026-10-30, warning) - https://www.wdbo.com/news/local/blue-green-algae-alert-issued-lake-howell-by-department-health/ST766UJZG5F3DIS2JRKV5WCUNI/
-- FL - Lake Thonotosassa (2026-10-16, warning) - https://floridapoisoncontrol.org/doh-hillsborough-issues-blue-green-algae-health-alert-for-lake-thonotosassa-7/
-- KS - Butler State Fishing Lake (2026-10-16, warning) - https://www.ksn.com/news/health/kansas-algae-bloom-warnings/
-- KS - Lake Scott (2026-10-09, warning) - https://www.kdhe.ks.gov/777/Harmful-Algal-Blooms
-- KS - Frisco Lake (2026-10-09, warning) - https://www.kdhe.ks.gov/777/Harmful-Algal-Blooms
-- KS - Marion County Lake (2026-10-09, warning) - https://www.kdhe.ks.gov/777/Harmful-Algal-Blooms
-- KS - Elkhorn Lake (2026-10-09, advisory) - https://www.kdhe.ks.gov/777/Harmful-Algal-Blooms
-- KS - Ottawa State Fishing Lake (2026-10-09, advisory) - https://www.kdhe.ks.gov/777/Harmful-Algal-Blooms
-- UT - Rockport Reservoir (2026-10-21, warning) - https://townlift.com/2026/10/harmful-algal-bloom-persists-at-rockport-reservoir-into-late-october/
-- WA - Pattison Lake (2026-10-16, warning) - https://www.thurstoncountywa.gov/news/toxic-algae-health-advisory-effect-pattison-lake-3
+## Added 7 (confirmed only; 1 from the California API)
+- CA - Eagle Lake (2026-11-01, advisory) - https://susanvillestuff.com/harmful-algal-bloom-prompts-caution-advisory-at-eagle-lake/
+- FL - Mexico Beach coastal waters (2026-10-28, warning) - https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/aquatic-toxins/where-are-habs/
+- FL - Gulf County coastal waters - Parker Avenue area (2026-11-06, warning) - https://gulfcounty.news/2026/11/08/health-department-widens-red-tide-health-alerts/
+- FL - Lake Howell (2026-10-26, warning) - https://seminole.floridahealth.gov/
+- FL - Lake Okeechobee - Hendry County (2026-10-21, warning) - https://lakeonews.com/clewiston/stories/doh-hendry-issues-blue-green-algae-health-alert-for-lake-okeechobee,88974
+- NY - Mirror Lake (2026-11-06, warning) - https://www.dailygazette.com/lpn/ade/mirror-lake-harmful-algal-bloom-confirmed-by-dec/article_4faa6327-12f1-4dcf-b3ed-f54e7a239808.html
+- UT - Panguitch Lake (2026-11-04, danger) - https://www.abc4.com/news/health/toxins-harmful-bloom-danger-panguitch/
 
-## Skipped 50
-- Lake of the Pines: duplicate
+## Skipped 49
+- Crab Creek: duplicate
+- San Antonio River: duplicate
+- Martinez Shoreline: duplicate
+- Indian Creek: duplicate
+- Skinner Creek: duplicate
+- Stone Creek: duplicate
 - Salmon Creek: duplicate
 - Lake Ralphine: duplicate
 - Scott River: duplicate
@@ -30,21 +28,15 @@ Total events on the map: 681
 - Muskgrave Creek: duplicate
 - Whelan Lake: duplicate
 - Kit Carson Park Eagle Scout Lake: duplicate
+- Little Sur River: duplicate
 - Willow Glen Ponds: duplicate
 - Crabtree Creek: duplicate
 - Lake McSwain: duplicate
-- Stone Creek: duplicate
-- Crab Creek: duplicate
 - Middle Fork Feather River: duplicate
 - Civic Center Park pond: duplicate
-- San Antonio River: duplicate
-- Little Sur River: duplicate
-- Skinner Creek: duplicate
 - Lake Hacienda: duplicate
-- Martinez Shoreline: duplicate
 - White River: duplicate
 - Navarro River: duplicate
-- Indian Creek: duplicate
 - West Valley Reservoir: duplicate
 - Lake Pillsbury: duplicate
 - Lake Combie: duplicate
@@ -52,7 +44,6 @@ Total events on the map: 681
 - Cold Stream: duplicate
 - Bell Canyon Reservoir: duplicate
 - Kidder Creek: duplicate
-- Salmon River: duplicate
 - South Fork Eel River: duplicate
 - Tuolumne River: duplicate
 - Putah Creek: duplicate
@@ -67,5 +58,6 @@ Total events on the map: 681
 - Lake Zyac: duplicate
 - North Yuba River: duplicate
 - Battle Creek: duplicate
+- Lake of the Pines: duplicate
 - Miramar: duplicate
-- Bay Lake: duplicate
+- Dry Creek: duplicate
